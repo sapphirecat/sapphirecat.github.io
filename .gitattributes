@@ -1,4 +1,6 @@
 *.html text
 *.xml  text
 *.txt  text
+*.css  text
+*.js   text
 .gitattributes text

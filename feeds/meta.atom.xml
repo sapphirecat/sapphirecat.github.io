@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat: the user pages</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/meta.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2014-12-19T00:00:00-05:00</updated><entry><title>User Pages… Finally</title><link href="https://sapphirecat.github.io/2014/353-user-pages-finally/" rel="alternate"></link><updated>2014-12-19T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-19:2014/353-user-pages-finally/</id><summary type="html">&lt;p&gt;I didn’t really have a place to pre-announce changes to my repos, so I made
+one.&lt;/p&gt;
+&lt;p&gt;This spawned a small adventure through &lt;a href="https://www.staticgen.com/"&gt;staticgen&lt;/a&gt;
+in order to find a static site generator.  I really wanted it to run on Win64,
+because I have to fire up a VM to update
+&lt;a href="https://www.sapphirepaw.org/propaganda"&gt;propaganda&lt;/a&gt; since it was built for a
+POSIX world.  For style points, I went for ones written in languages I already
+have installed.&lt;/p&gt;
+&lt;p&gt;So after trying &lt;a href="http://gohugo.io/"&gt;Hugo&lt;/a&gt;, &lt;a href="https://sculpin.io/"&gt;Sculpin&lt;/a&gt;,
+&lt;a href="http://phrozn.info/"&gt;Phrozn&lt;/a&gt;, and &lt;a href="http://getpelican.com/"&gt;Pelican&lt;/a&gt;, the last
+one happened to be a winner.&lt;/p&gt;
+&lt;p&gt;I’m kind of sad Hugo didn’t work out, since it seems fast and nicely built,
+but I couldn’t get it to understand about generating pages with &lt;em&gt;relative&lt;/em&gt;
+URLs so that I could preview them with the theme applying properly.&lt;/p&gt;
+&lt;p&gt;One of the PHP frameworks wasn’t PHAR-aware, and tried to use
+&lt;code&gt;DIRECTORY_SEPARATOR&lt;/code&gt; to build the path of an XML file to load… but that
+creates an invalid URL when &lt;code&gt;DIRECTORY_SEPARATOR&lt;/code&gt; isn’t ‘/’.&lt;/p&gt;
+&lt;p&gt;Pelican has its warts, to be sure (there’s no real themes gallery, just a
+&lt;a href="https://github.com/getpelican/pelican-themes"&gt;bunch of githubs&lt;/a&gt; with
+screenshots of varying quality) but it’s working and I can work with it.  And
+I’m not locked into keeping all my pages on github because Octopress is
+secretly managing the repository for me; I wrote my own publish script.
+Although magic is &lt;em&gt;convenient,&lt;/em&gt; it turns out that I always want to understand
+the next layer down.  Even if it’s just a small bit of knowledge I never use,
+it’s comforting to know I wouldn’t be hopelessly adrift if GitHub Pages closed
+down.&lt;/p&gt;
+&lt;p&gt;Anyway, look for future updates about my repositories here on
+&lt;a href="https://sapphirecat.github.io/"&gt;sapphirecat.github.io&lt;/a&gt;.  I want to get away
+from the “randomly dump breaking changes on an unsuspecting world” model of
+development.&lt;/p&gt;</summary></entry></feed>

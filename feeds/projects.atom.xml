@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat: the user pages</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2014-12-21T00:00:00-05:00</updated><entry><title>More fedora-pack Options</title><link href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="alternate"></link><updated>2014-12-21T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-21:2014/355-more-fedora-pack-options/</id><summary type="html">&lt;p&gt;I’ve noticed that &lt;code&gt;python-pip&lt;/code&gt; and &lt;code&gt;virtualenv&lt;/code&gt; packages on Ubuntu Utopic have
+similar dependencies—but the latter is on &lt;code&gt;*-whl&lt;/code&gt; packages and the former is
+not.  Since I use Python but &lt;em&gt;not&lt;/em&gt; virtualenv in my own server build, it
+‘would be nice’ to skip the automatic installation of it by fedora-pack.&lt;/p&gt;
+&lt;p&gt;Of course, in order to support such a thing, fedora-pack clearly needs more
+options for finer control.  Yet, it seems like the global option parser isn’t
+the perfect place for language-related options, so the
+&lt;code&gt;App::FedoraPack::System&lt;/code&gt; class tree may spawn some additional
+argument-related functions.&lt;/p&gt;
+&lt;p&gt;I may finally go with a config file of some sort.  The command line &lt;em&gt;is&lt;/em&gt;
+getting unwieldy already.&lt;/p&gt;</summary></entry></feed>

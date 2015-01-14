@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>sapphirecat: the user pages - Projects</title>
+        <title>fedora-pack Configuration File Update</title>
         <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/reset.css">
         <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/main.css">
         <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/pygment.css">
@@ -24,17 +24,14 @@
                     <li class="active"><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">fedora-pack Configuration File Update</h1>
+    </header>
 
-            <section id="content" class="body">
-                <ol id="posts-list" class="hfeed" start="8">
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark"
-                       title="Permalink to fedora-pack Configuration File Update">fedora-pack Configuration File Update</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I mentioned <a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/">last post</a> that
+    <div class="entry-content">
+      <p>I mentioned <a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/">last post</a> that
 I was thinking of going with “a config file of some sort.”  Plans have
 formed to use INI format, and the parser is written.  (Between the desires to
 be pure-perl all the way down and to keep embed size down, I didn’t find any
@@ -74,45 +71,10 @@ since actually using them is best practice, as I understand things.</p>
 in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
 [<a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark" title="Permalink to fedora-pack Configuration File Update">permalink</a>]
 
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
+</footer><!-- /.post-info -->    </div><!-- /.entry-content -->
 
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="bookmark"
-                       title="Permalink to More fedora-pack Options">More fedora-pack Options</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I’ve noticed that <code>python-pip</code> and <code>virtualenv</code> packages on Ubuntu Utopic have
-similar dependencies—but the latter is on <code>*-whl</code> packages and the former is
-not.  Since I use Python but <em>not</em> virtualenv in my own server build, it
-‘would be nice’ to skip the automatic installation of it by fedora-pack.</p>
-<p>Of course, in order to support such a thing, fedora-pack clearly needs more
-options for finer control.  Yet, it seems like the global option parser isn’t
-the perfect place for language-related options, so the
-<code>App::FedoraPack::System</code> class tree may spawn some additional
-argument-related functions.</p>
-<p>I may finally go with a config file of some sort.  The command line <em>is</em>
-getting unwieldy already.</p>
-<footer class="post-info">
-        <abbr class="published" title="2014-12-21T00:00:00-05:00">
-                Published: 2014-12-21
-        </abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="bookmark" title="Permalink to More fedora-pack Options">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>sapphirecat on...</h2>

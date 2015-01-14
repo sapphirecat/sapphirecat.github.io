@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat: the user pages</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2014-12-21T00:00:00-05:00</updated><entry><title>More fedora-pack Options</title><link href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="alternate"></link><updated>2014-12-21T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-21:2014/355-more-fedora-pack-options/</id><summary type="html">&lt;p&gt;I’ve noticed that &lt;code&gt;python-pip&lt;/code&gt; and &lt;code&gt;virtualenv&lt;/code&gt; packages on Ubuntu Utopic have
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat: the user pages</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2015-01-13T00:00:00-05:00</updated><entry><title>fedora-pack Configuration File Update</title><link href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="alternate"></link><updated>2015-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-01-13:2015/013-fedora-pack-config/</id><summary type="html">&lt;p&gt;I mentioned &lt;a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/"&gt;last post&lt;/a&gt; that
+I was thinking of going with “a config file of some sort.”  Plans have
+formed to use INI format, and the parser is written.  (Between the desires to
+be pure-perl all the way down and to keep embed size down, I didn’t find any
+pre-written parsers that suited me on CPAN.)&lt;/p&gt;
+&lt;p&gt;So, it’s probably going to end up something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;; we basically just use this for supervisord, no venv needed
+[python2]
+min_version = 2.7
+with_virtualenv = 0
+
+; legacy app can’t handle `carton exec`
+[perl]
+with_carton = 0
+
+[php]
+min_version=5.4
+
+[main]
+install = &amp;quot;php perl python2&amp;quot; ; known to fedora-pack
+add_packages = &amp;quot;php5-fpm libmoose-perl&amp;quot; ; known to apt/yum
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As a bonus, the sections organize the options so that languages can define
+their own options &lt;em&gt;fully independently,&lt;/em&gt; without having to avoid naming
+conflicts in the CLI options.&lt;/p&gt;
+&lt;p&gt;fedora-pack will continue to install all the per-language options by default,
+since actually using them is best practice, as I understand things.&lt;/p&gt;</summary></entry><entry><title>More fedora-pack Options</title><link href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="alternate"></link><updated>2014-12-21T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-21:2014/355-more-fedora-pack-options/</id><summary type="html">&lt;p&gt;I’ve noticed that &lt;code&gt;python-pip&lt;/code&gt; and &lt;code&gt;virtualenv&lt;/code&gt; packages on Ubuntu Utopic have
 similar dependencies—but the latter is on &lt;code&gt;*-whl&lt;/code&gt; packages and the former is
 not.  Since I use Python but &lt;em&gt;not&lt;/em&gt; virtualenv in my own server build, it
 ‘would be nice’ to skip the automatic installation of it by fedora-pack.&lt;/p&gt;

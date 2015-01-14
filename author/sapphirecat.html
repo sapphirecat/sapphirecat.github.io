@@ -29,6 +29,56 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark"
+                       title="Permalink to fedora-pack Configuration File Update">fedora-pack Configuration File Update</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>I mentioned <a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/">last post</a> that
+I was thinking of going with “a config file of some sort.”  Plans have
+formed to use INI format, and the parser is written.  (Between the desires to
+be pure-perl all the way down and to keep embed size down, I didn’t find any
+pre-written parsers that suited me on CPAN.)</p>
+<p>So, it’s probably going to end up something like this:</p>
+<div class="highlight"><pre>; we basically just use this for supervisord, no venv needed
+[python2]
+min_version = 2.7
+with_virtualenv = 0
+
+; legacy app can’t handle `carton exec`
+[perl]
+with_carton = 0
+
+[php]
+min_version=5.4
+
+[main]
+install = &quot;php perl python2&quot; ; known to fedora-pack
+add_packages = &quot;php5-fpm libmoose-perl&quot; ; known to apt/yum
+</pre></div>
+
+
+<p>As a bonus, the sections organize the options so that languages can define
+their own options <em>fully independently,</em> without having to avoid naming
+conflicts in the CLI options.</p>
+<p>fedora-pack will continue to install all the per-language options by default,
+since actually using them is best practice, as I understand things.</p>
+<footer class="post-info">
+        <abbr class="published" title="2015-01-13T00:00:00-05:00">
+                Published: 2015-01-13
+        </abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark" title="Permalink to fedora-pack Configuration File Update">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="bookmark"
                        title="Permalink to More fedora-pack Options">More fedora-pack Options</a></h1>
             </header>

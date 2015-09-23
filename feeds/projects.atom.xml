@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat: the user pages</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2015-01-13T00:00:00-05:00</updated><entry><title>fedora-pack Configuration File Update</title><link href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="alternate"></link><updated>2015-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-01-13:2015/013-fedora-pack-config/</id><summary type="html">&lt;p&gt;I mentioned &lt;a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/"&gt;last post&lt;/a&gt; that
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat: the user pages</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2015-09-22T00:00:00-04:00</updated><entry><title>fedora-pack to be superseded by cloud-maker</title><link href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="alternate"></link><updated>2015-09-22T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-09-22:2015/265-cloud-maker-replacing-fedora-pack/</id><summary type="html">&lt;p&gt;When we &lt;a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/"&gt;last left off&lt;/a&gt;, I had
+sketched out a config file for fedora-pack, then neglected it when I finally
+accepted that &lt;a href="http://sapphirepaw.blogspot.com/2015/02/perl-is-dying.html"&gt;Perl is dying&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Seven months later, fedora-pack is undergoing a rewrite to Python.  It’s
+equally widespread (or easy to install) and includes a ton of batteries.  I’ve
+always liked that.&lt;/p&gt;
+&lt;p&gt;But that’s only half the change.  I’ve been trying to simplify and streamline
+the code, to make it &lt;em&gt;more straightforward&lt;/em&gt; even at the expense of some
+flexibility and testability—there are, after all, no tests, no extensions,
+and no users.  As far as I know.&lt;/p&gt;
+&lt;p&gt;That’s resulted in a rather different codebase, because of two realizations:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;At work, I don’t use the multi-version capability.  What if
+   &lt;code&gt;make_provisioner&lt;/code&gt; just installs the platform’s &lt;em&gt;default&lt;/em&gt; version?  It
+   would have to know a lot less about distros and versions.&lt;/li&gt;
+&lt;li&gt;At work, our bundled scripts install our own necessary packages (such as
+   git) in addition to the core languages.  What if &lt;code&gt;make_provisioner&lt;/code&gt; doesn’t
+   bother offering &lt;em&gt;package preinstallation?&lt;/em&gt;  On the one side of the process
+   is &lt;code&gt;cloud-init&lt;/code&gt;, if preinstallation is important.  On the other, the runner
+   script can install its own choice of language packages.  Now
+   &lt;code&gt;make_provisioner&lt;/code&gt; doesn’t even have to care about distros (or features or
+   packages) &lt;strong&gt;at all&lt;/strong&gt;, as long as it can have a distro-agnostic SFX stub.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Things seem to be going well so far; expect a code dump on github by November.
+I want to use cloud-maker for work’s AMI builder, instead of a hacked
+fedora-pack fork, and the Ubuntu 15.10 release will be a good time to change
+that.&lt;/p&gt;</summary></entry><entry><title>fedora-pack Configuration File Update</title><link href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="alternate"></link><updated>2015-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-01-13:2015/013-fedora-pack-config/</id><summary type="html">&lt;p&gt;I mentioned &lt;a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/"&gt;last post&lt;/a&gt; that
 I was thinking of going with “a config file of some sort.”  Plans have
 formed to use INI format, and the parser is written.  (Between the desires to
 be pure-perl all the way down and to keep embed size down, I didn’t find any

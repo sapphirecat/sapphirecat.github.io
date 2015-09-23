@@ -29,6 +29,54 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="bookmark"
+                       title="Permalink to fedora-pack to be superseded by cloud-maker">fedora-pack to be superseded by cloud-maker</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>When we <a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/">last left off</a>, I had
+sketched out a config file for fedora-pack, then neglected it when I finally
+accepted that <a href="http://sapphirepaw.blogspot.com/2015/02/perl-is-dying.html">Perl is dying</a>.</p>
+<p>Seven months later, fedora-pack is undergoing a rewrite to Python.  It’s
+equally widespread (or easy to install) and includes a ton of batteries.  I’ve
+always liked that.</p>
+<p>But that’s only half the change.  I’ve been trying to simplify and streamline
+the code, to make it <em>more straightforward</em> even at the expense of some
+flexibility and testability—there are, after all, no tests, no extensions,
+and no users.  As far as I know.</p>
+<p>That’s resulted in a rather different codebase, because of two realizations:</p>
+<ol>
+<li>At work, I don’t use the multi-version capability.  What if
+   <code>make_provisioner</code> just installs the platform’s <em>default</em> version?  It
+   would have to know a lot less about distros and versions.</li>
+<li>At work, our bundled scripts install our own necessary packages (such as
+   git) in addition to the core languages.  What if <code>make_provisioner</code> doesn’t
+   bother offering <em>package preinstallation?</em>  On the one side of the process
+   is <code>cloud-init</code>, if preinstallation is important.  On the other, the runner
+   script can install its own choice of language packages.  Now
+   <code>make_provisioner</code> doesn’t even have to care about distros (or features or
+   packages) <strong>at all</strong>, as long as it can have a distro-agnostic SFX stub.</li>
+</ol>
+<p>Things seem to be going well so far; expect a code dump on github by November.
+I want to use cloud-maker for work’s AMI builder, instead of a hacked
+fedora-pack fork, and the Ubuntu 15.10 release will be a good time to change
+that.</p>
+<footer class="post-info">
+        <abbr class="published" title="2015-09-22T00:00:00-04:00">
+                Published: 2015-09-22
+        </abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="bookmark" title="Permalink to fedora-pack to be superseded by cloud-maker">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark"
                        title="Permalink to fedora-pack Configuration File Update">fedora-pack Configuration File Update</a></h1>
             </header>

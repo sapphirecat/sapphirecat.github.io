@@ -125,7 +125,8 @@ a:focus {text-decoration:underline !important;}
 /* Banner */
 #banner {padding:2.5em 0 0;}
 #banner h1 {font-size:3em; margin-bottom:0.3em;}
-#banner h1 a:link, #banner h1 a:visited {display:block; font-weight:bold; text-decoration:none;}
+#banner h1 a {display:block; font-weight:bold; text-decoration:none;
+	border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
 #banner h1 em {font-size:0.56em;}
 
 /* Main Nav */

@@ -20,12 +20,6 @@ body {
 @media tv {
 	body {max-width: 640px; font-size: 100%;}
 }
-@media only screen and (min-device-width: 421px) and (max-device-width: 640px) and (orientation: portrait) {
-	body {max-width: 640px;}
-}
-@media only screen and (max-device-width: 420px) and (orientation: portrait) {
-	body {max-width: 420px;}
-}
 
 /* Headings */
 h1 {font-size:2em }

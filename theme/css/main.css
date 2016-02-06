@@ -17,6 +17,15 @@ body {
 	padding:0;
 	text-align:left;
 }
+@media tv {
+	body {max-width: 640px; font-size: 100%;}
+}
+@media only screen and (min-device-width: 421px) and (max-device-width: 640px) and (orientation: portrait) {
+	body {max-width: 640px;}
+}
+@media only screen and (max-device-width: 420px) and (orientation: portrait) {
+	body {max-width: 420px;}
+}
 
 /* Headings */
 h1 {font-size:2em }
@@ -150,9 +159,9 @@ a:focus {text-decoration:underline !important;}
 #extras {margin:0 auto 2.25em auto; overflow:hidden;}
 #extras ul {list-style:none; margin:0;}
 #extras h2 {font-size:1.429em; margin-bottom:.25em; padding:0 3px;}
+#extras li {float:left; margin:0 2%; width:29%; min-width:130px;}
 #extras a {display:block; padding:.3em .25em; margin-bottom: .85em; text-align: center;}
-#extras .blogroll li {float:left; margin:0 2%; width:29%; min-width:130px;}
-/* unused social stuff -> social.css */
+/* unused social icons -> social.css */
 
 /* About *****************/
 #about {font-style:normal; text-align:left; margin-bottom:2em; padding:20px; overflow:hidden;

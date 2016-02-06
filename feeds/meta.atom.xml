@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/meta.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2014-12-19T00:00:00-05:00</updated><entry><title>User Pages… Finally</title><link href="https://sapphirecat.github.io/2014/353-user-pages-finally/" rel="alternate"></link><updated>2014-12-19T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-19:2014/353-user-pages-finally/</id><summary type="html">&lt;p&gt;I didn’t really have a place to pre-announce changes to my repos, so I made
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/meta.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2016-02-05T00:00:00-05:00</updated><entry><title>Theme Updated</title><link href="https://sapphirecat.github.io/2016/036-theme-update/" rel="alternate"></link><updated>2016-02-05T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2016-02-05:2016/036-theme-update/</id><summary type="html">&lt;p&gt;I accidentally discovered that the theme I was using performs an &lt;em&gt;extremely
+inaccurately named&lt;/em&gt; “reset” that wipes out the only style &lt;code&gt;:focus&lt;/code&gt; really has.
+So I put something back on all the links.&lt;/p&gt;
+&lt;p&gt;The colors got switched up a bit, too.  There’s less purple/yellow and more
+red/blue.  I even reworked the 800px design to resize fluidly down to 320px,
+for an improved mobile experience.&lt;/p&gt;
+&lt;p&gt;The desktop layout has &lt;a href="https://sapphirecat.github.io/blog/Meta/theme-1.png"&gt;&lt;strong&gt;Before&lt;/strong&gt;&lt;/a&gt; and
+&lt;a href="https://sapphirecat.github.io/blog/Meta/theme-2.png"&gt;&lt;strong&gt;After&lt;/strong&gt;&lt;/a&gt; screenshots.&lt;/p&gt;</summary></entry><entry><title>User Pages… Finally</title><link href="https://sapphirecat.github.io/2014/353-user-pages-finally/" rel="alternate"></link><updated>2014-12-19T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-19:2014/353-user-pages-finally/</id><summary type="html">&lt;p&gt;I didn’t really have a place to pre-announce changes to my repos, so I made
 one.&lt;/p&gt;
 &lt;p&gt;This spawned a small adventure through &lt;a href="https://www.staticgen.com/"&gt;staticgen&lt;/a&gt;
 in order to find a static site generator.  I really wanted it to run on Win64,

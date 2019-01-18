@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2019-01-13T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>New repo: ashgren GVim colorscheme</title><link href="https://sapphirecat.github.io/2019/013-ashgren-gvim-colorscheme/" rel="alternate"></link><published>2019-01-13T00:00:00-05:00</published><updated>2019-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-13:/2019/013-ashgren-gvim-colorscheme/</id><summary type="html">&lt;p&gt;I dusted off an old PuTTY theme, from when I was using Windows Vista, and
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2019-01-17T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Three Vim Plugins</title><link href="https://sapphirecat.github.io/2019/017-a-trio-of-vim-plugins/" rel="alternate"></link><published>2019-01-17T00:00:00-05:00</published><updated>2019-01-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-17:/2019/017-a-trio-of-vim-plugins/</id><summary type="html">&lt;p&gt;I dusted off and ENHANCED™ three of my old vim plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/sapphirecat/blursave-vim"&gt;BlurSave&lt;/a&gt; – to save files when
+  the vim window loses focus, probably only useful in gvim&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sapphirecat/php-psr2-vim"&gt;PHP PSR-2 auto settings&lt;/a&gt; – to
+  set PSR-2 recommended indent settings and margin highlighting for PHP files&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sapphirecat/indent-cmds-vim"&gt;Indent commands&lt;/a&gt; – to offer
+  more semantic shortcuts for controlling tabs/spaces/both and their widths&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They're all designed to be usable by &lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;,
+so I think that means they work in all Vim package managers (Pathogen, Vundle,
+etc.)&lt;/p&gt;</summary><content type="html">&lt;p&gt;I dusted off and ENHANCED™ three of my old vim plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/sapphirecat/blursave-vim"&gt;BlurSave&lt;/a&gt; – to save files when
+  the vim window loses focus, probably only useful in gvim&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sapphirecat/php-psr2-vim"&gt;PHP PSR-2 auto settings&lt;/a&gt; – to
+  set PSR-2 recommended indent settings and margin highlighting for PHP files&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sapphirecat/indent-cmds-vim"&gt;Indent commands&lt;/a&gt; – to offer
+  more semantic shortcuts for controlling tabs/spaces/both and their widths&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They're all designed to be usable by &lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;,
+so I think that means they work in all Vim package managers (Pathogen, Vundle,
+etc.)&lt;/p&gt;</content></entry><entry><title>New repo: ashgren GVim colorscheme</title><link href="https://sapphirecat.github.io/2019/013-ashgren-gvim-colorscheme/" rel="alternate"></link><published>2019-01-13T00:00:00-05:00</published><updated>2019-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-13:/2019/013-ashgren-gvim-colorscheme/</id><summary type="html">&lt;p&gt;I dusted off an old PuTTY theme, from when I was using Windows Vista, and
 ported it to GVim (and only GVim.)&lt;/p&gt;
 &lt;p&gt;The repository has been published as &lt;a href="https://github.com/sapphirecat/ashgren-gvim/"&gt;ashgren-gvim&lt;/a&gt;
 on my GitHub.&lt;/p&gt;

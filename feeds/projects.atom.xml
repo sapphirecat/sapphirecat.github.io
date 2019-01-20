@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2019-01-17T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Three Vim Plugins</title><link href="https://sapphirecat.github.io/2019/017-a-trio-of-vim-plugins/" rel="alternate"></link><published>2019-01-17T00:00:00-05:00</published><updated>2019-01-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-17:/2019/017-a-trio-of-vim-plugins/</id><summary type="html">&lt;p&gt;I dusted off and ENHANCED™ three of my old vim plugins:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2019-01-20T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>zora colorscheme for Vim/GVim/Neovim</title><link href="https://sapphirecat.github.io/2019/020-zora-colorscheme-vim-gvim-neovim/" rel="alternate"></link><published>2019-01-20T00:00:00-05:00</published><updated>2019-01-20T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-20:/2019/020-zora-colorscheme-vim-gvim-neovim/</id><summary type="html">&lt;p&gt;I created a new colorscheme!  It's based on Zora's Domain and the surrounding
+areas in &lt;em&gt;The Legend of Zelda: Breath of the Wild.&lt;/em&gt;  It's a light theme,
+making heavy use of blue, green, purple, and salmon.&lt;/p&gt;
+&lt;p&gt;It's now available from &lt;a href="https://github.com/sapphirecat/zora-theme-vim/"&gt;zora-theme-vim&lt;/a&gt;
+on my GitHub.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sapphirecat.github.io/images/zora/php.png"&gt;&lt;img alt="An example using PHP code" src="https://sapphirecat.github.io/images/zora/php.png" title="PHP Demo"&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://sapphirecat.github.io/images/zora/multi.png"&gt;&lt;img alt="An example of multiple windows and cursor line option" src="https://sapphirecat.github.io/images/zora/multi.png" title="Multi/Option Demo"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is less of an experiment and more of a complete theme than ashgren was,
+so it's correspondingly more complete, &lt;strong&gt;and&lt;/strong&gt; it supports 256-color
+terminals.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I created a new colorscheme!  It's based on Zora's Domain and the surrounding
+areas in &lt;em&gt;The Legend of Zelda: Breath of the Wild.&lt;/em&gt;  It's a light theme,
+making heavy use of blue, green, purple, and salmon.&lt;/p&gt;
+&lt;p&gt;It's now available from &lt;a href="https://github.com/sapphirecat/zora-theme-vim/"&gt;zora-theme-vim&lt;/a&gt;
+on my GitHub.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sapphirecat.github.io/images/zora/php.png"&gt;&lt;img alt="An example using PHP code" src="https://sapphirecat.github.io/images/zora/php.png" title="PHP Demo"&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://sapphirecat.github.io/images/zora/multi.png"&gt;&lt;img alt="An example of multiple windows and cursor line option" src="https://sapphirecat.github.io/images/zora/multi.png" title="Multi/Option Demo"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is less of an experiment and more of a complete theme than ashgren was,
+so it's correspondingly more complete, &lt;strong&gt;and&lt;/strong&gt; it supports 256-color
+terminals.&lt;/p&gt;</content></entry><entry><title>Three Vim Plugins</title><link href="https://sapphirecat.github.io/2019/017-a-trio-of-vim-plugins/" rel="alternate"></link><published>2019-01-17T00:00:00-05:00</published><updated>2019-01-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-17:/2019/017-a-trio-of-vim-plugins/</id><summary type="html">&lt;p&gt;I dusted off and ENHANCED™ three of my old vim plugins:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/sapphirecat/blursave-vim"&gt;BlurSave&lt;/a&gt; – to save files when
   the vim window loses focus, probably only useful in gvim&lt;/li&gt;

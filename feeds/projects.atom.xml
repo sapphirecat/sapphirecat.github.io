@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2019-01-20T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>zora colorscheme for Vim/GVim/Neovim</title><link href="https://sapphirecat.github.io/2019/020-zora-colorscheme-vim-gvim-neovim/" rel="alternate"></link><published>2019-01-20T00:00:00-05:00</published><updated>2019-01-20T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-20:/2019/020-zora-colorscheme-vim-gvim-neovim/</id><summary type="html">&lt;p&gt;I created a new colorscheme!  It's based on Zora's Domain and the surrounding
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2020-11-21T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>devproxy2 version 2.0.0 released!</title><link href="https://sapphirecat.github.io/2020/326-devproxy2-version-2-0-0-released/" rel="alternate"></link><published>2020-11-21T00:00:00-05:00</published><updated>2020-11-21T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2020-11-21:/2020/326-devproxy2-version-2-0-0-released/</id><content type="html">&lt;p&gt;The core binary has been stable for months, so I finally tagged &lt;code&gt;v2.0.0&lt;/code&gt; and
+made a GitHub Release with it.&lt;/p&gt;
+&lt;p&gt;Recent changes have added a Dockerfile and related support for isolating the
+version of Go used to build &lt;code&gt;devproxy2&lt;/code&gt; from the host's version of Go, so that
+I can continue to support "1.13+" as long as my dependencies do.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>zora colorscheme for Vim/GVim/Neovim</title><link href="https://sapphirecat.github.io/2019/020-zora-colorscheme-vim-gvim-neovim/" rel="alternate"></link><published>2019-01-20T00:00:00-05:00</published><updated>2019-01-20T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-20:/2019/020-zora-colorscheme-vim-gvim-neovim/</id><content type="html">&lt;p&gt;I created a new colorscheme!  It's based on Zora's Domain and the surrounding
 areas in &lt;em&gt;The Legend of Zelda: Breath of the Wild.&lt;/em&gt;  It's a light theme,
 making heavy use of blue, green, purple, and salmon.&lt;/p&gt;
 &lt;p&gt;It's now available from &lt;a href="https://github.com/sapphirecat/zora-theme-vim/"&gt;zora-theme-vim&lt;/a&gt;
@@ -9,17 +13,7 @@ on my GitHub.&lt;/p&gt;
 &lt;a href="https://sapphirecat.github.io/images/zora/multi.png"&gt;&lt;img alt="An example of multiple windows and cursor line option" src="https://sapphirecat.github.io/images/zora/multi.png" title="Multi/Option Demo"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is less of an experiment and more of a complete theme than ashgren was,
 so it's correspondingly more complete, &lt;strong&gt;and&lt;/strong&gt; it supports 256-color
-terminals.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I created a new colorscheme!  It's based on Zora's Domain and the surrounding
-areas in &lt;em&gt;The Legend of Zelda: Breath of the Wild.&lt;/em&gt;  It's a light theme,
-making heavy use of blue, green, purple, and salmon.&lt;/p&gt;
-&lt;p&gt;It's now available from &lt;a href="https://github.com/sapphirecat/zora-theme-vim/"&gt;zora-theme-vim&lt;/a&gt;
-on my GitHub.&lt;/p&gt;
-&lt;p&gt;Examples:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://sapphirecat.github.io/images/zora/php.png"&gt;&lt;img alt="An example using PHP code" src="https://sapphirecat.github.io/images/zora/php.png" title="PHP Demo"&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://sapphirecat.github.io/images/zora/multi.png"&gt;&lt;img alt="An example of multiple windows and cursor line option" src="https://sapphirecat.github.io/images/zora/multi.png" title="Multi/Option Demo"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is less of an experiment and more of a complete theme than ashgren was,
-so it's correspondingly more complete, &lt;strong&gt;and&lt;/strong&gt; it supports 256-color
-terminals.&lt;/p&gt;</content></entry><entry><title>Three Vim Plugins</title><link href="https://sapphirecat.github.io/2019/017-a-trio-of-vim-plugins/" rel="alternate"></link><published>2019-01-17T00:00:00-05:00</published><updated>2019-01-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-17:/2019/017-a-trio-of-vim-plugins/</id><summary type="html">&lt;p&gt;I dusted off and ENHANCED™ three of my old vim plugins:&lt;/p&gt;
+terminals.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>Three Vim Plugins</title><link href="https://sapphirecat.github.io/2019/017-a-trio-of-vim-plugins/" rel="alternate"></link><published>2019-01-17T00:00:00-05:00</published><updated>2019-01-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-17:/2019/017-a-trio-of-vim-plugins/</id><content type="html">&lt;p&gt;I dusted off and ENHANCED™ three of my old vim plugins:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/sapphirecat/blursave-vim"&gt;BlurSave&lt;/a&gt; – to save files when
   the vim window loses focus, probably only useful in gvim&lt;/li&gt;
@@ -30,18 +24,7 @@ terminals.&lt;/p&gt;</content></entry><entry><title>Three Vim Plugins</title><li
 &lt;/ul&gt;
 &lt;p&gt;They're all designed to be usable by &lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;,
 so I think that means they work in all Vim package managers (Pathogen, Vundle,
-etc.)&lt;/p&gt;</summary><content type="html">&lt;p&gt;I dusted off and ENHANCED™ three of my old vim plugins:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/sapphirecat/blursave-vim"&gt;BlurSave&lt;/a&gt; – to save files when
-  the vim window loses focus, probably only useful in gvim&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/sapphirecat/php-psr2-vim"&gt;PHP PSR-2 auto settings&lt;/a&gt; – to
-  set PSR-2 recommended indent settings and margin highlighting for PHP files&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/sapphirecat/indent-cmds-vim"&gt;Indent commands&lt;/a&gt; – to offer
-  more semantic shortcuts for controlling tabs/spaces/both and their widths&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They're all designed to be usable by &lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;,
-so I think that means they work in all Vim package managers (Pathogen, Vundle,
-etc.)&lt;/p&gt;</content></entry><entry><title>New repo: ashgren GVim colorscheme</title><link href="https://sapphirecat.github.io/2019/013-ashgren-gvim-colorscheme/" rel="alternate"></link><published>2019-01-13T00:00:00-05:00</published><updated>2019-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-13:/2019/013-ashgren-gvim-colorscheme/</id><summary type="html">&lt;p&gt;I dusted off an old PuTTY theme, from when I was using Windows Vista, and
+etc.)&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>New repo: ashgren GVim colorscheme</title><link href="https://sapphirecat.github.io/2019/013-ashgren-gvim-colorscheme/" rel="alternate"></link><published>2019-01-13T00:00:00-05:00</published><updated>2019-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2019-01-13:/2019/013-ashgren-gvim-colorscheme/</id><content type="html">&lt;p&gt;I dusted off an old PuTTY theme, from when I was using Windows Vista, and
 ported it to GVim (and only GVim.)&lt;/p&gt;
 &lt;p&gt;The repository has been published as &lt;a href="https://github.com/sapphirecat/ashgren-gvim/"&gt;ashgren-gvim&lt;/a&gt;
 on my GitHub.&lt;/p&gt;
@@ -57,23 +40,7 @@ among the darker colors they use.&lt;/p&gt;
 &lt;a href="https://sapphirecat.github.io/images/ashgren/multi.png"&gt;&lt;img alt="An example of multiple windows and cursor line option" src="https://sapphirecat.github.io/images/ashgren/multi.png" title="Multi/Option Demo"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;As a PuTTY theme, ashgren used a set of darker (regular) and lighter (bold)
 foreground colors, but this port ends up mostly using the darker side of the
-palette.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I dusted off an old PuTTY theme, from when I was using Windows Vista, and
-ported it to GVim (and only GVim.)&lt;/p&gt;
-&lt;p&gt;The repository has been published as &lt;a href="https://github.com/sapphirecat/ashgren-gvim/"&gt;ashgren-gvim&lt;/a&gt;
-on my GitHub.&lt;/p&gt;
-&lt;p&gt;ashgren is a low-contrast theme with a mid-tone background.  A lot of light
-themes use a blazing white background, which makes it difficult to distinguish
-among the darker colors they use.&lt;/p&gt;
-&lt;p&gt;Examples:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://sapphirecat.github.io/images/ashgren/php.png"&gt;&lt;img alt="An example using PHP code" src="https://sapphirecat.github.io/images/ashgren/php.png" title="PHP Demo"&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://sapphirecat.github.io/images/ashgren/js.png"&gt;&lt;img alt="An example using JavaScript code" src="https://sapphirecat.github.io/images/ashgren/js.png" title="JS Demo"&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://sapphirecat.github.io/images/ashgren/go.png"&gt;&lt;img alt="An example using Go code" src="https://sapphirecat.github.io/images/ashgren/go.png" title="Go Demo"&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://sapphirecat.github.io/images/ashgren/py.png"&gt;&lt;img alt="An example using Python code" src="https://sapphirecat.github.io/images/ashgren/py.png" title="Python Demo"&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://sapphirecat.github.io/images/ashgren/md.png"&gt;&lt;img alt="An example using Markdown" src="https://sapphirecat.github.io/images/ashgren/md.png" title="Markdown Demo"&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://sapphirecat.github.io/images/ashgren/multi.png"&gt;&lt;img alt="An example of multiple windows and cursor line option" src="https://sapphirecat.github.io/images/ashgren/multi.png" title="Multi/Option Demo"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;As a PuTTY theme, ashgren used a set of darker (regular) and lighter (bold)
-foreground colors, but this port ends up mostly using the darker side of the
-palette.&lt;/p&gt;</content></entry><entry><title>cloud-maker 0.8.4: minor bugfixes</title><link href="https://sapphirecat.github.io/2016/035-cloud-maker-0-8-4-release/" rel="alternate"></link><published>2016-02-04T00:00:00-05:00</published><updated>2016-02-04T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2016-02-04:/2016/035-cloud-maker-0-8-4-release/</id><summary type="html">&lt;p&gt;I discovered the module which I had intended to use as a version check via
+palette.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>cloud-maker 0.8.4: minor bugfixes</title><link href="https://sapphirecat.github.io/2016/035-cloud-maker-0-8-4-release/" rel="alternate"></link><published>2016-02-04T00:00:00-05:00</published><updated>2016-02-04T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2016-02-04:/2016/035-cloud-maker-0-8-4-release/</id><content type="html">&lt;p&gt;I discovered the module which I had intended to use as a version check via
 &lt;code&gt;python -m cloud_maker&lt;/code&gt; didn’t actually work.  There was no way to execute it,
 to begin with.  It also turned out that &lt;code&gt;sys.version_info&lt;/code&gt; wasn’t something
 that could be used with tuple unpacking in Python 2.&lt;/p&gt;
@@ -92,26 +59,7 @@ and as a wheel &lt;a href="https://pypi.python.org/pypi/cloud-maker/0.8.4"&gt;on
 &lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;issue tracker&lt;/a&gt; on github.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note: this release was actually made January 24&lt;sup&gt;th&lt;/sup&gt;, but I forgot to
 write about it here (and tag the git repository) until February
-4&lt;sup&gt;th&lt;/sup&gt;.&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I discovered the module which I had intended to use as a version check via
-&lt;code&gt;python -m cloud_maker&lt;/code&gt; didn’t actually work.  There was no way to execute it,
-to begin with.  It also turned out that &lt;code&gt;sys.version_info&lt;/code&gt; wasn’t something
-that could be used with tuple unpacking in Python 2.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;--help&lt;/code&gt; option used to print the usage information, and then a traceback
-for a &lt;code&gt;SystemExit&lt;/code&gt; exception.  I narrowed this down to an overzealous
-&lt;code&gt;try/except&lt;/code&gt; block, so now it recognizes &lt;code&gt;SystemExit&lt;/code&gt; and &lt;code&gt;KeyboardInterrupt&lt;/code&gt;
-and skips the traceback for those.&lt;/p&gt;
-&lt;p&gt;Finally, the documentation was enhanced slightly.  I was rather surprised,
-when finding out how the version check was supposed to work, that there wasn’t
-the &lt;em&gt;slightest bit&lt;/em&gt; in the README about how this was intended to be invoked.
-The slightest bit is now there.&lt;/p&gt;
-&lt;p&gt;This release is available as
-&lt;a href="https://github.com/sapphirecat/cloud-maker/releases"&gt;source on github&lt;/a&gt;,
-and as a wheel &lt;a href="https://pypi.python.org/pypi/cloud-maker/0.8.4"&gt;on PyPI&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Any and all bugs should be reported to the
-&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;issue tracker&lt;/a&gt; on github.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: this release was actually made January 24&lt;sup&gt;th&lt;/sup&gt;, but I forgot to
-write about it here (and tag the git repository) until February
-4&lt;sup&gt;th&lt;/sup&gt;.&lt;/em&gt;&lt;/p&gt;</content></entry><entry><title>cloud-maker 0.8.3: new config variable, accurate requirements</title><link href="https://sapphirecat.github.io/2015/356-cloud-maker-0-8-3-release/" rel="alternate"></link><published>2015-12-22T00:00:00-05:00</published><updated>2015-12-22T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-12-22:/2015/356-cloud-maker-0-8-3-release/</id><summary type="html">&lt;p&gt;The 0.8.3 release adds an &lt;code&gt;INI_DIR&lt;/code&gt; variable that will be substituted into
+4&lt;sup&gt;th&lt;/sup&gt;.&lt;/em&gt;&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>cloud-maker 0.8.3: new config variable, accurate requirements</title><link href="https://sapphirecat.github.io/2015/356-cloud-maker-0-8-3-release/" rel="alternate"></link><published>2015-12-22T00:00:00-05:00</published><updated>2015-12-22T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-12-22:/2015/356-cloud-maker-0-8-3-release/</id><content type="html">&lt;p&gt;The 0.8.3 release adds an &lt;code&gt;INI_DIR&lt;/code&gt; variable that will be substituted into
 values in the configuration file, allowing for paths to be specified relative
 to the config file. It turned out that this was a feature I wanted, to keep
 the bundled data somewhat more local than requiring a fixed path under &lt;code&gt;HOME&lt;/code&gt;.&lt;/p&gt;
@@ -131,33 +79,10 @@ would need to patch over in order to work around it.&lt;/p&gt;
 &lt;a href="https://github.com/sapphirecat/cloud-maker/releases"&gt;source on github&lt;/a&gt;,
 and as a wheel &lt;a href="https://pypi.python.org/pypi/cloud-maker/0.8.3"&gt;on PyPI&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Any and all bugs should be reported to the
-&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;issue tracker&lt;/a&gt; on github.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The 0.8.3 release adds an &lt;code&gt;INI_DIR&lt;/code&gt; variable that will be substituted into
-values in the configuration file, allowing for paths to be specified relative
-to the config file. It turned out that this was a feature I wanted, to keep
-the bundled data somewhat more local than requiring a fixed path under &lt;code&gt;HOME&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;While testing this change, I discovered that the Python 3 line prior to 3.3.4
-had a bug in the &lt;code&gt;tarfile&lt;/code&gt; module.  When using the module exactly as I am
-(with an externally-provided file object and gzip compression), the tar data
-doesn’t get written into the gzip stream on disk.&lt;/p&gt;
-&lt;p&gt;That was reported as &lt;a href="http://bugs.python.org/issue20238"&gt;issue 20238&lt;/a&gt; and
-fixed by the final releases of 3.3.4 and 3.4.0, while 2.7 has never been
-affected.&lt;/p&gt;
-&lt;p&gt;Due to the widespread availability of 2.7 on systems that packaged affected
-versions of Python, I decided the pragmatic path would be to recommend Python
-2 on those systems and raise the Python 3 version requirement to 3.3.4.  I
-haven’t isolated the fix by diffing Python releases, nor do I know what I
-would need to patch over in order to work around it.&lt;/p&gt;
-&lt;p&gt;This release is available as
-&lt;a href="https://github.com/sapphirecat/cloud-maker/releases"&gt;source on github&lt;/a&gt;,
-and as a wheel &lt;a href="https://pypi.python.org/pypi/cloud-maker/0.8.3"&gt;on PyPI&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Any and all bugs should be reported to the
-&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;issue tracker&lt;/a&gt; on github.&lt;/p&gt;</content></entry><entry><title>cloud-maker 0.8.2: PyPI publication</title><link href="https://sapphirecat.github.io/2015/317-cloud-maker-0-8-2-release/" rel="alternate"></link><published>2015-11-13T00:00:00-05:00</published><updated>2015-11-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-11-13:/2015/317-cloud-maker-0-8-2-release/</id><summary type="html">&lt;p&gt;The 0.8.2 release adds a &lt;code&gt;setup.py&lt;/code&gt; and associated machinery, meaning that
+&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;issue tracker&lt;/a&gt; on github.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>cloud-maker 0.8.2: PyPI publication</title><link href="https://sapphirecat.github.io/2015/317-cloud-maker-0-8-2-release/" rel="alternate"></link><published>2015-11-13T00:00:00-05:00</published><updated>2015-11-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-11-13:/2015/317-cloud-maker-0-8-2-release/</id><content type="html">&lt;p&gt;The 0.8.2 release adds a &lt;code&gt;setup.py&lt;/code&gt; and associated machinery, meaning that
 cloud-maker is now &lt;a href="https://pypi.python.org/pypi/cloud-maker"&gt;on PyPI&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Any and all bugs should be reported to the issue tracker on
-&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;github&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The 0.8.2 release adds a &lt;code&gt;setup.py&lt;/code&gt; and associated machinery, meaning that
-cloud-maker is now &lt;a href="https://pypi.python.org/pypi/cloud-maker"&gt;on PyPI&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Any and all bugs should be reported to the issue tracker on
-&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;github&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>cloud-maker 0.8.1: Python 2.7 support</title><link href="https://sapphirecat.github.io/2015/312-cloud-maker-0-8-1-release/" rel="alternate"></link><published>2015-11-08T00:00:00-05:00</published><updated>2015-11-08T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-11-08:/2015/312-cloud-maker-0-8-1-release/</id><summary type="html">&lt;p&gt;The 0.8.1 release adds official support for Python 2.7 to cloud-maker,
+&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;github&lt;/a&gt;.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>cloud-maker 0.8.1: Python 2.7 support</title><link href="https://sapphirecat.github.io/2015/312-cloud-maker-0-8-1-release/" rel="alternate"></link><published>2015-11-08T00:00:00-05:00</published><updated>2015-11-08T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-11-08:/2015/312-cloud-maker-0-8-1-release/</id><content type="html">&lt;p&gt;The 0.8.1 release adds official support for Python 2.7 to cloud-maker,
 enabling it to run on the system python installed with OS X.  Reports on the
 Internet suggest that this covers at least as far back as Lion, forward
 through El Capitan.  (I can’t find an extensive history, but Lion released a
@@ -166,38 +91,18 @@ year after 2.7.0, which in turn came after Snow Leopard.)&lt;/p&gt;
 python 2 is typically installed as the default &lt;code&gt;/usr/bin/python&lt;/code&gt; executable.&lt;/p&gt;
 &lt;p&gt;If there are any issues with this release, please send them to
 &lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;github&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In other news, ‘v0.8.0’ and ‘v0.8.1’ tags have been added to the repository.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The 0.8.1 release adds official support for Python 2.7 to cloud-maker,
-enabling it to run on the system python installed with OS X.  Reports on the
-Internet suggest that this covers at least as far back as Lion, forward
-through El Capitan.  (I can’t find an extensive history, but Lion released a
-year after 2.7.0, which in turn came after Snow Leopard.)&lt;/p&gt;
-&lt;p&gt;This change should also make it more readily available to Linux users, as
-python 2 is typically installed as the default &lt;code&gt;/usr/bin/python&lt;/code&gt; executable.&lt;/p&gt;
-&lt;p&gt;If there are any issues with this release, please send them to
-&lt;a href="https://github.com/sapphirecat/cloud-maker/issues"&gt;github&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In other news, ‘v0.8.0’ and ‘v0.8.1’ tags have been added to the repository.&lt;/p&gt;</content></entry><entry><title>cloud-maker 0.8.0</title><link href="https://sapphirecat.github.io/2015/295-cloud-maker-0-8-0-release/" rel="alternate"></link><published>2015-10-22T00:00:00-04:00</published><updated>2015-10-22T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-10-22:/2015/295-cloud-maker-0-8-0-release/</id><summary type="html">&lt;p&gt;I didn’t actually test the OVA export I got from &lt;code&gt;fedora2ova&lt;/code&gt;, but
+&lt;p&gt;In other news, ‘v0.8.0’ and ‘v0.8.1’ tags have been added to the repository.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>cloud-maker 0.8.0</title><link href="https://sapphirecat.github.io/2015/295-cloud-maker-0-8-0-release/" rel="alternate"></link><published>2015-10-22T00:00:00-04:00</published><updated>2015-10-22T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-10-22:/2015/295-cloud-maker-0-8-0-release/</id><content type="html">&lt;p&gt;I didn’t actually test the OVA export I got from &lt;code&gt;fedora2ova&lt;/code&gt;, but
 &lt;code&gt;cloud-maker&lt;/code&gt; has been pushed to my
 &lt;a href="https://github.com/sapphirecat/cloud-maker"&gt;cloud-maker repo&lt;/a&gt;.  Happy Wily
 Werewolf Release Day!&lt;/p&gt;
 &lt;p&gt;The repo is currently designed to run in-place with either of these forms:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python -m make_provisioner --help
-python . provision --help
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;python -m make_provisioner --help&lt;/span&gt;
+&lt;span class="err"&gt;python . provision --help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;I’d like to add a &lt;code&gt;setup.py&lt;/code&gt; so it can be published to PyPI &lt;strike&gt;and
-abandoned,&lt;/strike&gt; but that’s not ready yet.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I didn’t actually test the OVA export I got from &lt;code&gt;fedora2ova&lt;/code&gt;, but
-&lt;code&gt;cloud-maker&lt;/code&gt; has been pushed to my
-&lt;a href="https://github.com/sapphirecat/cloud-maker"&gt;cloud-maker repo&lt;/a&gt;.  Happy Wily
-Werewolf Release Day!&lt;/p&gt;
-&lt;p&gt;The repo is currently designed to run in-place with either of these forms:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python -m make_provisioner --help
-python . provision --help
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;I’d like to add a &lt;code&gt;setup.py&lt;/code&gt; so it can be published to PyPI &lt;strike&gt;and
-abandoned,&lt;/strike&gt; but that’s not ready yet.&lt;/p&gt;</content></entry><entry><title>fedora-pack to be superseded by cloud-maker</title><link href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="alternate"></link><published>2015-09-22T00:00:00-04:00</published><updated>2015-09-22T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-09-22:/2015/265-cloud-maker-replacing-fedora-pack/</id><summary type="html">&lt;p&gt;When we &lt;a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/"&gt;last left off&lt;/a&gt;, I had
+abandoned,&lt;/strike&gt; but that’s not ready yet.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>fedora-pack to be superseded by cloud-maker</title><link href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="alternate"></link><published>2015-09-22T00:00:00-04:00</published><updated>2015-09-22T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-09-22:/2015/265-cloud-maker-replacing-fedora-pack/</id><content type="html">&lt;p&gt;When we &lt;a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/"&gt;last left off&lt;/a&gt;, I had
 sketched out a config file for fedora-pack, then neglected it when I finally
 accepted that &lt;a href="http://sapphirepaw.blogspot.com/2015/02/perl-is-dying.html"&gt;Perl is dying&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Seven months later, fedora-pack is undergoing a rewrite to Python.  It’s
@@ -223,89 +128,35 @@ and no users.  As far as I know.&lt;/p&gt;
 &lt;p&gt;Things seem to be going well so far; expect a code dump on github by November.
 I want to use cloud-maker for work’s AMI builder, instead of a hacked
 fedora-pack fork, and the Ubuntu 15.10 release will be a good time to change
-that.&lt;/p&gt;</summary><content type="html">&lt;p&gt;When we &lt;a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/"&gt;last left off&lt;/a&gt;, I had
-sketched out a config file for fedora-pack, then neglected it when I finally
-accepted that &lt;a href="http://sapphirepaw.blogspot.com/2015/02/perl-is-dying.html"&gt;Perl is dying&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Seven months later, fedora-pack is undergoing a rewrite to Python.  It’s
-equally widespread (or easy to install) and includes a ton of batteries.  I’ve
-always liked that.&lt;/p&gt;
-&lt;p&gt;But that’s only half the change.  I’ve been trying to simplify and streamline
-the code, to make it &lt;em&gt;more straightforward&lt;/em&gt; even at the expense of some
-flexibility and testability—there are, after all, no tests, no extensions,
-and no users.  As far as I know.&lt;/p&gt;
-&lt;p&gt;That’s resulted in a rather different codebase, because of two realizations:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;At work, I don’t use the multi-version capability.  What if
-   &lt;code&gt;make_provisioner&lt;/code&gt; just installs the platform’s &lt;em&gt;default&lt;/em&gt; version?  It
-   would have to know a lot less about distros and versions.&lt;/li&gt;
-&lt;li&gt;At work, our bundled scripts install our own necessary packages (such as
-   git) in addition to the core languages.  What if &lt;code&gt;make_provisioner&lt;/code&gt; doesn’t
-   bother offering &lt;em&gt;package preinstallation?&lt;/em&gt;  On the one side of the process
-   is &lt;code&gt;cloud-init&lt;/code&gt;, if preinstallation is important.  On the other, the runner
-   script can install its own choice of language packages.  Now
-   &lt;code&gt;make_provisioner&lt;/code&gt; doesn’t even have to care about distros (or features or
-   packages) &lt;strong&gt;at all&lt;/strong&gt;, as long as it can have a distro-agnostic SFX stub.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Things seem to be going well so far; expect a code dump on github by November.
-I want to use cloud-maker for work’s AMI builder, instead of a hacked
-fedora-pack fork, and the Ubuntu 15.10 release will be a good time to change
-that.&lt;/p&gt;</content></entry><entry><title>fedora-pack Configuration File Update</title><link href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="alternate"></link><published>2015-01-13T00:00:00-05:00</published><updated>2015-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-01-13:/2015/013-fedora-pack-config/</id><summary type="html">&lt;p&gt;I mentioned &lt;a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/"&gt;last post&lt;/a&gt; that
+that.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>fedora-pack Configuration File Update</title><link href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="alternate"></link><published>2015-01-13T00:00:00-05:00</published><updated>2015-01-13T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2015-01-13:/2015/013-fedora-pack-config/</id><content type="html">&lt;p&gt;I mentioned &lt;a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/"&gt;last post&lt;/a&gt; that
 I was thinking of going with “a config file of some sort.”  Plans have
 formed to use INI format, and the parser is written.  (Between the desires to
 be pure-perl all the way down and to keep embed size down, I didn’t find any
 pre-written parsers that suited me on CPAN.)&lt;/p&gt;
 &lt;p&gt;So, it’s probably going to end up something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;; we basically just use this for supervisord, no venv needed
-[python2]
-min_version = 2.7
-with_virtualenv = 0
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;basically&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;just&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;use&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;supervisord&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;no&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;needed&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;python2&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;min_version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;2.7&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;with_virtualenv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-; legacy app can’t handle `carton exec`
-[perl]
-with_carton = 0
+&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;legacy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;can&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;handle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;carton&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;perl&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;with_carton&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-[php]
-min_version=5.4
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;min_version&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;5.4&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-[main]
-install = &amp;quot;php perl python2&amp;quot; ; known to fedora-pack
-add_packages = &amp;quot;php5-fpm libmoose-perl&amp;quot; ; known to apt/yum
-&lt;/pre&gt;&lt;/div&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;php perl python2&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;known&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fedora&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pack&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;add_packages&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;php5-fpm libmoose-perl&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;known&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;yum&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;As a bonus, the sections organize the options so that languages can define
 their own options &lt;em&gt;fully independently,&lt;/em&gt; without having to avoid naming
 conflicts in the CLI options.&lt;/p&gt;
 &lt;p&gt;fedora-pack will continue to install all the per-language options by default,
-since actually using them is best practice, as I understand things.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I mentioned &lt;a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/"&gt;last post&lt;/a&gt; that
-I was thinking of going with “a config file of some sort.”  Plans have
-formed to use INI format, and the parser is written.  (Between the desires to
-be pure-perl all the way down and to keep embed size down, I didn’t find any
-pre-written parsers that suited me on CPAN.)&lt;/p&gt;
-&lt;p&gt;So, it’s probably going to end up something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;; we basically just use this for supervisord, no venv needed
-[python2]
-min_version = 2.7
-with_virtualenv = 0
-
-; legacy app can’t handle `carton exec`
-[perl]
-with_carton = 0
-
-[php]
-min_version=5.4
-
-[main]
-install = &amp;quot;php perl python2&amp;quot; ; known to fedora-pack
-add_packages = &amp;quot;php5-fpm libmoose-perl&amp;quot; ; known to apt/yum
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;As a bonus, the sections organize the options so that languages can define
-their own options &lt;em&gt;fully independently,&lt;/em&gt; without having to avoid naming
-conflicts in the CLI options.&lt;/p&gt;
-&lt;p&gt;fedora-pack will continue to install all the per-language options by default,
-since actually using them is best practice, as I understand things.&lt;/p&gt;</content></entry><entry><title>More fedora-pack Options</title><link href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="alternate"></link><published>2014-12-21T00:00:00-05:00</published><updated>2014-12-21T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-21:/2014/355-more-fedora-pack-options/</id><summary type="html">&lt;p&gt;I’ve noticed that &lt;code&gt;python-pip&lt;/code&gt; and &lt;code&gt;virtualenv&lt;/code&gt; packages on Ubuntu Utopic have
+since actually using them is best practice, as I understand things.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>More fedora-pack Options</title><link href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="alternate"></link><published>2014-12-21T00:00:00-05:00</published><updated>2014-12-21T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2014-12-21:/2014/355-more-fedora-pack-options/</id><content type="html">&lt;p&gt;I’ve noticed that &lt;code&gt;python-pip&lt;/code&gt; and &lt;code&gt;virtualenv&lt;/code&gt; packages on Ubuntu Utopic have
 similar dependencies—but the latter is on &lt;code&gt;*-whl&lt;/code&gt; packages and the former is
 not.  Since I use Python but &lt;em&gt;not&lt;/em&gt; virtualenv in my own server build, it
 ‘would be nice’ to skip the automatic installation of it by fedora-pack.&lt;/p&gt;
@@ -315,14 +166,4 @@ the perfect place for language-related options, so the
 &lt;code&gt;App::FedoraPack::System&lt;/code&gt; class tree may spawn some additional
 argument-related functions.&lt;/p&gt;
 &lt;p&gt;I may finally go with a config file of some sort.  The command line &lt;em&gt;is&lt;/em&gt;
-getting unwieldy already.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I’ve noticed that &lt;code&gt;python-pip&lt;/code&gt; and &lt;code&gt;virtualenv&lt;/code&gt; packages on Ubuntu Utopic have
-similar dependencies—but the latter is on &lt;code&gt;*-whl&lt;/code&gt; packages and the former is
-not.  Since I use Python but &lt;em&gt;not&lt;/em&gt; virtualenv in my own server build, it
-‘would be nice’ to skip the automatic installation of it by fedora-pack.&lt;/p&gt;
-&lt;p&gt;Of course, in order to support such a thing, fedora-pack clearly needs more
-options for finer control.  Yet, it seems like the global option parser isn’t
-the perfect place for language-related options, so the
-&lt;code&gt;App::FedoraPack::System&lt;/code&gt; class tree may spawn some additional
-argument-related functions.&lt;/p&gt;
-&lt;p&gt;I may finally go with a config file of some sort.  The command line &lt;em&gt;is&lt;/em&gt;
-getting unwieldy already.&lt;/p&gt;</content></entry></feed>
+getting unwieldy already.&lt;/p&gt;</content><category term="Projects"></category></entry></feed>

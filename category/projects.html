@@ -26,6 +26,31 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2020/326-devproxy2-version-2-0-0-released/" rel="bookmark"
+                       title="Permalink to devproxy2 version 2.0.0 released!">devproxy2 version 2.0.0 released!</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>The core binary has been stable for months, so I finally tagged <code>v2.0.0</code> and
+made a GitHub Release with it.</p>
+<p>Recent changes have added a Dockerfile and related support for isolating the
+version of Go used to build <code>devproxy2</code> from the host's version of Go, so that
+I can continue to support "1.13+" as long as my dependencies do.</p>
+<footer class="post-info">
+        <abbr class="published" title="2020-11-21T00:00:00-05:00">
+                Published: 2020-11-21</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2020/326-devproxy2-version-2-0-0-released/" rel="bookmark" title="Permalink to devproxy2 version 2.0.0 released!">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2019/020-zora-colorscheme-vim-gvim-neovim/" rel="bookmark"
                        title="Permalink to zora colorscheme for Vim/GVim/Neovim">zora colorscheme for Vim/GVim/Neovim</a></h1>
             </header>
@@ -271,9 +296,9 @@ in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&n
 <a href="https://github.com/sapphirecat/cloud-maker">cloud-maker repo</a>.  Happy Wily
 Werewolf Release Day!</p>
 <p>The repo is currently designed to run in-place with either of these forms:</p>
-<div class="highlight"><pre><span></span>python -m make_provisioner --help
-python . provision --help
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">python -m make_provisioner --help</span>
+<span class="err">python . provision --help</span>
+</code></pre></div>
 
 
 <p>I’d like to add a <code>setup.py</code> so it can be published to PyPI <strike>and
@@ -351,22 +376,22 @@ formed to use INI format, and the parser is written.  (Between the desires to
 be pure-perl all the way down and to keep embed size down, I didn’t find any
 pre-written parsers that suited me on CPAN.)</p>
 <p>So, it’s probably going to end up something like this:</p>
-<div class="highlight"><pre><span></span>; we basically just use this for supervisord, no venv needed
-[python2]
-min_version = 2.7
-with_virtualenv = 0
+<div class="highlight"><pre><span></span><code><span class="p">;</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">basically</span><span class="w"> </span><span class="n">just</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">supervisord</span><span class="p">,</span><span class="w"> </span><span class="k">no</span><span class="w"> </span><span class="n">venv</span><span class="w"> </span><span class="n">needed</span><span class="w"></span>
+<span class="o">[</span><span class="n">python2</span><span class="o">]</span><span class="w"></span>
+<span class="n">min_version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.7</span><span class="w"></span>
+<span class="n">with_virtualenv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
 
-; legacy app can’t handle `carton exec`
-[perl]
-with_carton = 0
+<span class="p">;</span><span class="w"> </span><span class="n">legacy</span><span class="w"> </span><span class="n">app</span><span class="w"> </span><span class="n">can</span><span class="err">’</span><span class="n">t</span><span class="w"> </span><span class="n">handle</span><span class="w"> </span><span class="err">`</span><span class="n">carton</span><span class="w"> </span><span class="k">exec</span><span class="err">`</span><span class="w"></span>
+<span class="o">[</span><span class="n">perl</span><span class="o">]</span><span class="w"></span>
+<span class="n">with_carton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
 
-[php]
-min_version=5.4
+<span class="o">[</span><span class="n">php</span><span class="o">]</span><span class="w"></span>
+<span class="n">min_version</span><span class="o">=</span><span class="mf">5.4</span><span class="w"></span>
 
-[main]
-install = &quot;php perl python2&quot; ; known to fedora-pack
-add_packages = &quot;php5-fpm libmoose-perl&quot; ; known to apt/yum
-</pre></div>
+<span class="o">[</span><span class="n">main</span><span class="o">]</span><span class="w"></span>
+<span class="n">install</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;php perl python2&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">known</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">fedora</span><span class="o">-</span><span class="n">pack</span><span class="w"></span>
+<span class="n">add_packages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;php5-fpm libmoose-perl&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">known</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">apt</span><span class="o">/</span><span class="n">yum</span><span class="w"></span>
+</code></pre></div>
 
 
 <p>As a bonus, the sections organize the options so that languages can define

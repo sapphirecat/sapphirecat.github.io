@@ -28,33 +28,38 @@
     </header>
 
     <div class="entry-content">
-      <p>When we <a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/">last left off</a>, I had
-sketched out a config file for fedora-pack, then neglected it when I finally
-accepted that <a href="http://sapphirepaw.blogspot.com/2015/02/perl-is-dying.html">Perl is dying</a>.</p>
-<p>Seven months later, fedora-pack is undergoing a rewrite to Python.  It’s
-equally widespread (or easy to install) and includes a ton of batteries.  I’ve
-always liked that.</p>
-<p>But that’s only half the change.  I’ve been trying to simplify and streamline
-the code, to make it <em>more straightforward</em> even at the expense of some
-flexibility and testability—there are, after all, no tests, no extensions,
-and no users.  As far as I know.</p>
-<p>That’s resulted in a rather different codebase, because of two realizations:</p>
-<ol>
-<li>At work, I don’t use the multi-version capability.  What if
-   <code>make_provisioner</code> just installs the platform’s <em>default</em> version?  It
-   would have to know a lot less about distros and versions.</li>
-<li>At work, our bundled scripts install our own necessary packages (such as
-   git) in addition to the core languages.  What if <code>make_provisioner</code> doesn’t
-   bother offering <em>package preinstallation?</em>  On the one side of the process
-   is <code>cloud-init</code>, if preinstallation is important.  On the other, the runner
-   script can install its own choice of language packages.  Now
-   <code>make_provisioner</code> doesn’t even have to care about distros (or features or
-   packages) <strong>at all</strong>, as long as it can have a distro-agnostic SFX stub.</li>
+      <p>When we <a class="reference external" href="https://sapphirecat.github.io/2015/013-fedora-pack-config/">last left
+off</a>, I had sketched
+out a config file for fedora-pack, then neglected it when I finally
+accepted that <a class="reference external" href="https://www.decodednode.com/2015/02/perl-is-dying.html">Perl is
+dying</a>.</p>
+<p>Seven months later, fedora-pack is undergoing a rewrite to Python. It’s
+equally widespread (or easy to install) and includes a ton of batteries.
+I’ve always liked that.</p>
+<p>But that’s only half the change. I’ve been trying to simplify and
+streamline the code, to make it <em>more straightforward</em> even at the
+expense of some flexibility and testability—there are, after all, no
+tests, no extensions, and no users. As far as I know.</p>
+<p>That’s resulted in a rather different codebase, because of two
+realizations:</p>
+<ol class="arabic simple">
+<li>At work, I don’t use the multi-version capability. What if
+<tt class="docutils literal">make_provisioner</tt> just installs the platform’s <em>default</em> version?
+It would have to know a lot less about distros and versions.</li>
+<li>At work, our bundled scripts install our own necessary packages (such
+as git) in addition to the core languages. What if
+<tt class="docutils literal">make_provisioner</tt> doesn’t bother offering <em>package
+preinstallation?</em> On the one side of the process is <tt class="docutils literal"><span class="pre">cloud-init</span></tt>,
+if preinstallation is important. On the other, the runner script can
+install its own choice of language packages. Now <tt class="docutils literal">make_provisioner</tt>
+doesn’t even have to care about distros (or features or packages)
+<strong>at all</strong>, as long as it can have a distro-agnostic SFX stub.</li>
 </ol>
-<p>Things seem to be going well so far; expect a code dump on github by November.
-I want to use cloud-maker for work’s AMI builder, instead of a hacked
-fedora-pack fork, and the Ubuntu 15.10 release will be a good time to change
-that.</p>
+<p>Things seem to be going well so far; expect a code dump on github by
+November. I want to use cloud-maker for work’s AMI builder, instead of a
+hacked fedora-pack fork, and the Ubuntu 15.10 release will be a good
+time to change that.</p>
+
 <footer class="post-info">
         <abbr class="published" title="2015-09-22T00:00:00-04:00">
                 Published: 2015-09-22</abbr>
@@ -77,7 +82,6 @@ in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&n
 
                             <li><a href="https://github.com/sapphirecat">github</a></li>
                             <li><a href="https://www.decodednode.com/">tech blog</a></li>
-                            <li><a href="https://twitter.com/sapphirepaw_org">twitter</a></li>
                             <li><a href="https://www.sapphirepaw.org/">ye olde www</a></li>
                         </ul>
                 </div><!-- /.social -->

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>dynacache version 1.1.2 released!</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/reset.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/main.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/pygment.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/typogrify.css">
+        <link href="//fonts.googleapis.com/css?family=Overlock:700" rel="stylesheet" type="text/css">
+
+        <link href="https://sapphirecat.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="sapphirecat Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://sapphirecat.github.io/">sapphirecat: <em>the user pages!</em></a></h1>
+                <nav><ul>
+                    <li><a href="https://sapphirecat.github.io/category/meta.html">Meta</a></li>
+                    <li class="active"><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">dynacache version 1.1.2 released!</h1>
+    </header>
+
+    <div class="entry-content">
+      <p>The <tt class="docutils literal">dynacache</tt> 1.1.2 <a class="reference external" href="https://github.com/sapphirecat/dynacache/releases/tag/v1.1.2">release</a> is made available to the public in binary form
+for AMD64 (v2 <a class="reference external" href="https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels">architecture level</a>) Linux.</p>
+<div class="section" id="what-is-dynacache">
+<h2>What is dynacache?</h2>
+<p>dynacache is a memcached server that stores data in Amazon DynamoDb.  It
+recognizes the session-locking protocol of PHP's memcached extension,
+converting them into locks in DynamoDb that are compatible with the AWS
+SDK for PHP.  Data is <em>nearly</em> compatible: the data is stored as a
+binary type, because the SDK for Go requires a string type to be valid
+UTF-8, and PHP makes no such promise.</p>
+<p>For best results with PHP, set the following options in the relevant
+<tt class="docutils literal">php.ini</tt> file:</p>
+<pre class="literal-block">
+; dynacache doesn't support the binary protocol
+memcached.sess_binary_protocol = Off
+memcached.sess_prefix = memc.sess.key.
+; use dynacache to store sessions
+session.save_handler = memcached
+session.save_path = localhost:11211
+</pre>
+<p>For available configuration, <tt class="docutils literal">dynacache</tt> supports the standard AWS SDK
+locations for credentials, and some optional settings shown when running
+<tt class="docutils literal">dynacache <span class="pre">-help</span></tt>.</p>
+</div>
+<div class="section" id="release-details">
+<h2>Release Details</h2>
+<p>Since the 1.0.0 release, which is the last public version, the following
+changes have been made:</p>
+<ol class="arabic simple">
+<li>The build is done with Go 1.18.1 with <tt class="docutils literal">GOAMD64=v2</tt> set.</li>
+<li>Response to <tt class="docutils literal">version</tt> is closer to the release version number than
+before.  It's still not <em>strictly</em> correct, unfortunately.</li>
+<li>CLI flag <tt class="docutils literal"><span class="pre">-verbose</span></tt> and env var <tt class="docutils literal">DYNACACHE_VERBOSE</tt> (uint8) for
+controlling the logging level.</li>
+<li>Missing <tt class="docutils literal">append</tt> and <tt class="docutils literal">prepend</tt> commands are accepted.</li>
+<li>Idle clients will be disconnected during normal operation.</li>
+<li>Graceful server shutdown happens within a bounded time limit.</li>
+<li>Repeated signals will cause an immediate shutdown.</li>
+</ol>
+<p><em>This project is not Open Source due to the reappointment of Richard
+Stallman to the FSF Board.</em>  sapphirecat stands opposed to child
+pornography, sex trafficking, sexism, and redefining rape.  Leadership
+creates the culture of the movement, and that culture gets associated
+implicitly with any participant.  It is imperative, then, for leaders to
+own their mistakes.</p>
+</div>
+
+<footer class="post-info">
+        <abbr class="published" title="2022-04-20T00:00:00-04:00">
+                Published: 2022-04-20</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2022/110-dynacache-1-1-2-released/" rel="bookmark" title="Permalink to dynacache version 1.1.2 released!">permalink</a>]
+
+</footer><!-- /.post-info -->    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>sapphirecat's...</h2>
+                        <ul>
+                            <li><a href="https://sapphirecat.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://github.com/sapphirecat">github</a></li>
+                            <li><a href="https://www.decodednode.com/">tech blog</a></li>
+                            <li><a href="https://www.sapphirepaw.org/">ye olde www</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.&nbsp;
+                Based on a theme from <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

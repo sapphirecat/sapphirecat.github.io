@@ -31,14 +31,16 @@
             </header>
 
             <div class="entry-content">
-            <p>I accidentally discovered that the theme I was using performs an <em>extremely
-inaccurately named</em> “reset” that wipes out the only style <code>:focus</code> really has.
-So I put something back on all the links.</p>
-<p>The colors got switched up a bit, too.  There’s less purple/yellow and more
-red/blue.  I even reworked the 800px design to resize fluidly down to 320px,
-for an improved mobile experience.</p>
-<p>The desktop layout has <a href="https://sapphirecat.github.io/images/theme/2016-before.png"><strong>Before</strong></a> and
-<a href="https://sapphirecat.github.io/images/theme/2016-after.png"><strong>After</strong></a> screenshots.</p>
+            <p>I accidentally discovered that the theme I was using performs an
+<em>extremely inaccurately named</em> “reset” that wipes out the only style
+<tt class="docutils literal">:focus</tt> really has. So I put something back on all the links.</p>
+<p>The colors got switched up a bit, too. There’s less purple/yellow and
+more red/blue. I even reworked the 800px design to resize fluidly down
+to 320px, for an improved mobile experience.</p>
+<p>The desktop layout has
+<a class="reference external" href="https://sapphirecat.github.io/images/theme/2016-before.png">Before</a> and
+<a class="reference external" href="https://sapphirecat.github.io/images/theme/2016-after.png">After</a> screenshots.</p>
+
 <footer class="post-info">
         <abbr class="published" title="2016-02-05T00:00:00-05:00">
                 Published: 2016-02-05</abbr>
@@ -59,36 +61,40 @@ in <a href="https://sapphirecat.github.io/category/meta.html">Meta</a>&nbsp;
             </header>
 
             <div class="entry-content">
-            <p>I didn’t really have a place to pre-announce changes to my repos, so I made
-one.</p>
-<p>This spawned a small adventure through <a href="https://www.staticgen.com/">staticgen</a>
-in order to find a static site generator.  I really wanted it to run on Win64,
-because I have to fire up a VM to update
-<a href="https://www.sapphirepaw.org/propaganda">propaganda</a> since it was built for a
-POSIX world.  For style points, I went for ones written in languages I already
-have installed.</p>
-<p>So after trying <a href="http://gohugo.io/">Hugo</a>, <a href="https://sculpin.io/">Sculpin</a>,
-<a href="http://phrozn.info/">Phrozn</a>, and <a href="http://getpelican.com/">Pelican</a>, the last
-one happened to be a winner.</p>
-<p>I’m kind of sad Hugo didn’t work out, since it seems fast and nicely built,
-but I couldn’t get it to understand about generating pages with <em>relative</em>
-URLs so that I could preview them with the theme applying properly.</p>
+            <p>I didn’t really have a place to pre-announce changes to my repos, so I
+made one.</p>
+<p>This spawned a small adventure through
+<a class="reference external" href="https://www.staticgen.com/">staticgen</a> in order to find a static
+site generator. I really wanted it to run on Win64, because I have to
+fire up a VM to update
+<a class="reference external" href="https://www.sapphirepaw.org/propaganda">propaganda</a> since it was
+built for a POSIX world. For style points, I went for ones written in
+languages I already have installed.</p>
+<p>So after trying <a class="reference external" href="http://gohugo.io/">Hugo</a>,
+<a class="reference external" href="https://sculpin.io/">Sculpin</a>, <a class="reference external" href="http://phrozn.info/">Phrozn</a>, and
+<a class="reference external" href="http://getpelican.com/">Pelican</a>, the last one happened to be a
+winner.</p>
+<p>I’m kind of sad Hugo didn’t work out, since it seems fast and nicely
+built, but I couldn’t get it to understand about generating pages with
+<em>relative</em> URLs so that I could preview them with the theme applying
+properly.</p>
 <p>One of the PHP frameworks wasn’t PHAR-aware, and tried to use
-<code>DIRECTORY_SEPARATOR</code> to build the path of an XML file to load… but that
-creates an invalid URL when <code>DIRECTORY_SEPARATOR</code> isn’t ‘/’.</p>
-<p>Pelican has its warts, to be sure (there’s no real themes gallery, just a
-<a href="https://github.com/getpelican/pelican-themes">bunch of githubs</a> with
-screenshots of varying quality) but it’s working and I can work with it.  And
-I’m not locked into keeping all my pages on github because Octopress is
-secretly managing the repository for me; I wrote my own publish script.
-Although magic is <em>convenient,</em> it turns out that I always want to understand
-the next layer down.  Even if it’s just a small bit of knowledge I never use,
-it’s comforting to know I wouldn’t be hopelessly adrift if GitHub Pages closed
-down.</p>
+<tt class="docutils literal">DIRECTORY_SEPARATOR</tt> to build the path of an XML file to load… but
+that creates an invalid URL when <tt class="docutils literal">DIRECTORY_SEPARATOR</tt> isn’t ‘/’.</p>
+<p>Pelican has its warts, to be sure (there’s no real themes gallery, just
+a <a class="reference external" href="https://github.com/getpelican/pelican-themes">bunch of githubs</a>
+with screenshots of varying quality) but it’s working and I can work
+with it. And I’m not locked into keeping all my pages on github because
+Octopress is secretly managing the repository for me; I wrote my own
+publish script. Although magic is <em>convenient,</em> it turns out that I
+always want to understand the next layer down. Even if it’s just a small
+bit of knowledge I never use, it’s comforting to know I wouldn’t be
+hopelessly adrift if GitHub Pages closed down.</p>
 <p>Anyway, look for future updates about my repositories here on
-<a href="https://sapphirecat.github.io/">sapphirecat.github.io</a>.  I want to get away
-from the “randomly dump breaking changes on an unsuspecting world” model of
-development.</p>
+<a class="reference external" href="https://sapphirecat.github.io/">sapphirecat.github.io</a>. I want to
+get away from the “randomly dump breaking changes on an unsuspecting
+world” model of development.</p>
+
 <footer class="post-info">
         <abbr class="published" title="2014-12-19T00:00:00-05:00">
                 Published: 2014-12-19</abbr>
@@ -114,7 +120,6 @@ in <a href="https://sapphirecat.github.io/category/meta.html">Meta</a>&nbsp;
 
                             <li><a href="https://github.com/sapphirecat">github</a></li>
                             <li><a href="https://www.decodednode.com/">tech blog</a></li>
-                            <li><a href="https://twitter.com/sapphirepaw_org">twitter</a></li>
                             <li><a href="https://www.sapphirepaw.org/">ye olde www</a></li>
                         </ul>
                 </div><!-- /.social -->

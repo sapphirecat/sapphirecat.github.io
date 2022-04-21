@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>sapphirecat</title>
+        <title>sapphirecat - Projects</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/reset.css">
         <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/main.css">
@@ -18,45 +18,12 @@
                 <h1><a href="https://sapphirecat.github.io/">sapphirecat: <em>the user pages!</em></a></h1>
                 <nav><ul>
                     <li><a href="https://sapphirecat.github.io/category/meta.html">Meta</a></li>
-                    <li><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
+                    <li class="active"><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <section id="content" class="body">
                 <ol id="posts-list" class="hfeed" start="8">
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/312-cloud-maker-0-8-1-release/" rel="bookmark"
-                       title="Permalink to cloud-maker 0.8.1: Python 2.7 support">cloud-maker 0.8.1: Python 2.7 support</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>The 0.8.1 release adds official support for Python 2.7 to cloud-maker,
-enabling it to run on the system python installed with OS X. Reports on
-the Internet suggest that this covers at least as far back as Lion,
-forward through El Capitan. (I can’t find an extensive history, but Lion
-released a year after 2.7.0, which in turn came after Snow Leopard.)</p>
-<p>This change should also make it more readily available to Linux users,
-as python 2 is typically installed as the default <tt class="docutils literal">/usr/bin/python</tt>
-executable.</p>
-<p>If there are any issues with this release, please send them to
-<a class="reference external" href="https://github.com/sapphirecat/cloud-maker/issues">github</a>.</p>
-<p>In other news, ‘v0.8.0’ and ‘v0.8.1’ tags have been added to the
-repository.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2015-11-08T00:00:00-05:00">
-                Published: 2015-11-08</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/312-cloud-maker-0-8-1-release/" rel="bookmark" title="Permalink to cloud-maker 0.8.1: Python 2.7 support">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
         <li><article class="hentry">
             <header>
                 <h1><a href="https://sapphirecat.github.io/2015/295-cloud-maker-0-8-0-release/" rel="bookmark"
@@ -225,64 +192,10 @@ in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&n
 
 </footer><!-- /.post-info -->            </div><!-- /.entry-content -->
         </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2014/353-user-pages-finally/" rel="bookmark"
-                       title="Permalink to User Pages… Finally">User Pages… Finally</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I didn’t really have a place to pre-announce changes to my repos, so I
-made one.</p>
-<p>This spawned a small adventure through
-<a class="reference external" href="https://www.staticgen.com/">staticgen</a> in order to find a static
-site generator. I really wanted it to run on Win64, because I have to
-fire up a VM to update
-<a class="reference external" href="https://www.sapphirepaw.org/propaganda">propaganda</a> since it was
-built for a POSIX world. For style points, I went for ones written in
-languages I already have installed.</p>
-<p>So after trying <a class="reference external" href="http://gohugo.io/">Hugo</a>,
-<a class="reference external" href="https://sculpin.io/">Sculpin</a>, <a class="reference external" href="http://phrozn.info/">Phrozn</a>, and
-<a class="reference external" href="http://getpelican.com/">Pelican</a>, the last one happened to be a
-winner.</p>
-<p>I’m kind of sad Hugo didn’t work out, since it seems fast and nicely
-built, but I couldn’t get it to understand about generating pages with
-<em>relative</em> URLs so that I could preview them with the theme applying
-properly.</p>
-<p>One of the PHP frameworks wasn’t PHAR-aware, and tried to use
-<tt class="docutils literal">DIRECTORY_SEPARATOR</tt> to build the path of an XML file to load… but
-that creates an invalid URL when <tt class="docutils literal">DIRECTORY_SEPARATOR</tt> isn’t ‘/’.</p>
-<p>Pelican has its warts, to be sure (there’s no real themes gallery, just
-a <a class="reference external" href="https://github.com/getpelican/pelican-themes">bunch of githubs</a>
-with screenshots of varying quality) but it’s working and I can work
-with it. And I’m not locked into keeping all my pages on github because
-Octopress is secretly managing the repository for me; I wrote my own
-publish script. Although magic is <em>convenient,</em> it turns out that I
-always want to understand the next layer down. Even if it’s just a small
-bit of knowledge I never use, it’s comforting to know I wouldn’t be
-hopelessly adrift if GitHub Pages closed down.</p>
-<p>Anyway, look for future updates about my repositories here on
-<a class="reference external" href="https://sapphirecat.github.io/">sapphirecat.github.io</a>. I want to
-get away from the “randomly dump breaking changes on an unsuspecting
-world” model of development.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2014-12-19T00:00:00-05:00">
-                Published: 2014-12-19</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/meta.html">Meta</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2014/353-user-pages-finally/" rel="bookmark" title="Permalink to User Pages… Finally">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-        <a href="https://sapphirecat.github.io/index.html">&#8647;</a>
-        <a href="https://sapphirecat.github.io/index.html">&laquo;</a>
+        <a href="https://sapphirecat.github.io/category/projects.html">&#8647;</a>
+        <a href="https://sapphirecat.github.io/category/projects.html">&laquo;</a>
     Page 2 / 2
 </p>
             </section><!-- /#content -->

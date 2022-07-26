@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>fedora-pack Configuration File Update</title>
+        <title>Theme Updated (2022)</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/reset.css">
         <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/main.css">
@@ -17,57 +17,35 @@
         <header id="banner" class="body">
                 <h1><a href="https://sapphirecat.github.io/">sapphirecat: <em>the user pages!</em></a></h1>
                 <nav><ul>
-                    <li><a href="https://sapphirecat.github.io/category/meta.html">Meta</a></li>
-                    <li class="active"><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
+                    <li class="active"><a href="https://sapphirecat.github.io/category/meta.html">Meta</a></li>
+                    <li><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
   <article>
     <header>
-      <h1 class="entry-title">fedora-pack Configuration File Update</h1>
+      <h1 class="entry-title">Theme Updated (2022)</h1>
     </header>
 
     <div class="entry-content">
-      <p>I mentioned <a class="reference external" href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/">last
-post</a> that I
-was thinking of going with “a config file of some sort.” Plans have
-formed to use INI format, and the parser is written. (Between the
-desires to be pure-perl all the way down and to keep embed size down, I
-didn’t find any pre-written parsers that suited me on CPAN.)</p>
-<p>So, it’s probably going to end up something like this:</p>
-<pre class="literal-block">
-; we basically just use this for supervisord, no venv needed
-[python2]
-min_version = 2.7
-with_virtualenv = 0
-
-; legacy app can’t handle `carton exec`
-[perl]
-with_carton = 0
-
-[php]
-min_version=5.4
-
-[main]
-install = &quot;php perl python2&quot; ; known to fedora-pack
-add_packages = &quot;php5-fpm libmoose-perl&quot; ; known to apt/yum
-</pre>
-<p>As a bonus, the sections organize the options so that languages can
-define their own options <em>fully independently,</em> without having to avoid
-naming conflicts in the CLI options.</p>
-<p>fedora-pack will continue to install all the per-language options by
-default, since actually using them is best practice, as I understand
-things.</p>
+      <p>I added a light theme for user-agents that support preferring light color
+schemes.  Dark is still the default, because it’s the correct way to have a
+color scheme, despite people shouting at me on the internet from 2002 until
+the advent of dark mode that “dark themes go against biological fact.”  How
+strange that the biological essentialism vanished overnight, almost as if it
+were never true.</p>
+<p>While I was updating the stylesheet, I fixed some 2009-isms in it, like
+IE-specific rules and prefixed <tt class="docutils literal"><span class="pre">border-radius</span></tt> rules.  This is the future.</p>
 
 <footer class="post-info">
-        <abbr class="published" title="2015-01-13T00:00:00-05:00">
-                Published: 2015-01-13</abbr>
+        <abbr class="published" title="2022-07-25T00:00:00-04:00">
+                Published: 2022-07-25</abbr>
 
         <address class="vcard author">
                 by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
         </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark" title="Permalink to fedora-pack Configuration File Update">permalink</a>]
+in <a href="https://sapphirecat.github.io/category/meta.html">Meta</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2022/206-theme-update-light-mode/" rel="bookmark" title="Permalink to Theme Updated (2022)">permalink</a>]
 
 </footer><!-- /.post-info -->    </div><!-- /.entry-content -->
 

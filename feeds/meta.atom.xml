@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Meta</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/meta.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2016-02-05T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Theme Updated</title><link href="https://sapphirecat.github.io/2016/036-theme-update/" rel="alternate"></link><published>2016-02-05T00:00:00-05:00</published><updated>2016-02-05T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2016-02-05:/2016/036-theme-update/</id><content type="html">&lt;p&gt;I accidentally discovered that the theme I was using performs an
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Meta</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/meta.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-07-25T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Theme Updated (2022)</title><link href="https://sapphirecat.github.io/2022/206-theme-update-light-mode/" rel="alternate"></link><published>2022-07-25T00:00:00-04:00</published><updated>2022-07-25T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-07-25:/2022/206-theme-update-light-mode/</id><content type="html">&lt;p&gt;I added a light theme for user-agents that support preferring light color
+schemes.  Dark is still the default, because it’s the correct way to have a
+color scheme, despite people shouting at me on the internet from 2002 until
+the advent of dark mode that “dark themes go against biological fact.”  How
+strange that the biological essentialism vanished overnight, almost as if it
+were never true.&lt;/p&gt;
+&lt;p&gt;While I was updating the stylesheet, I fixed some 2009-isms in it, like
+IE-specific rules and prefixed &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;border-radius&lt;/span&gt;&lt;/tt&gt; rules.  This is the future.&lt;/p&gt;
+</content><category term="Meta"></category></entry><entry><title>Theme Updated</title><link href="https://sapphirecat.github.io/2016/036-theme-update/" rel="alternate"></link><published>2016-02-05T00:00:00-05:00</published><updated>2016-02-05T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2016-02-05:/2016/036-theme-update/</id><content type="html">&lt;p&gt;I accidentally discovered that the theme I was using performs an
 &lt;em&gt;extremely inaccurately named&lt;/em&gt; “reset” that wipes out the only style
 &lt;tt class="docutils literal"&gt;:focus&lt;/tt&gt; really has. So I put something back on all the links.&lt;/p&gt;
 &lt;p&gt;The colors got switched up a bit, too. There’s less purple/yellow and

@@ -26,6 +26,62 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2022/227-devproxy2-2-1-1-released/" rel="bookmark"
+                       title="Permalink to devproxy2 version 2.1.1 released!">devproxy2 version 2.1.1 released!</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>The <tt class="docutils literal">devproxy2</tt> 2.1.1 source <a class="reference external" href="https://github.com/sapphirecat/devproxy2/releases/tag/v2.1.1">release</a> has been made.</p>
+<p>Due to an oversight, a 2.1.0 release was also made today, although the
+tag has been available in the repository for some time.</p>
+<div class="section" id="what-is-devproxy2">
+<h2>What is devproxy2?</h2>
+<p>devproxy2 is an HTTP/HTTPS proxy server that redirects configured
+domains to an arbitrary destination.  This allows a Web browser to use a
+production URL to access a development VM/container.</p>
+<p>In combination with an extension like <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/proxy-switcher-and-manager/">Proxy Switcher and Manager</a>,
+choosing production or development is fast and simple, and has a
+graphical status indication.</p>
+<p>It is also possible to use NAT port forwarding (e.g. port 8080 on the
+host to port 80 on the VM) to access the development code, without the
+development code needing to know that the browser sees it on a
+nonstandard port.  That information is held only in the proxy and
+forwarding configurations.</p>
+</div>
+<div class="section" id="release-details">
+<h2>Release Details</h2>
+<p>Since the 2.1.0 release, the following changes have been made:</p>
+<ol class="arabic simple">
+<li>The security posture has been improved, per <a class="reference external" href="https://www.elttam.com/blog/golang-codereview/">advice</a> that was posted
+on r/netsec.</li>
+<li>The default ports for servers are applied correctly; this feature was
+broken in 2.1.0 with the switch to go-toml 2.x.</li>
+<li>The author is using Podman for testing instead of Docker.</li>
+<li>Dependencies have been updated.</li>
+</ol>
+<p>Please file any problems in GitHub <a class="reference external" href="https://github.com/sapphirecat/devproxy2/issues">issues</a>.</p>
+</div>
+<div class="section" id="one-last-thing">
+<h2>One Last Thing</h2>
+<p>Please consider using Firefox and maybe even donating to Mozilla.  The
+web needs genuine competition to remain free and open.</p>
+</div>
+
+<footer class="post-info">
+        <abbr class="published" title="2022-08-15T00:00:00-04:00">
+                Published: 2022-08-15</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2022/227-devproxy2-2-1-1-released/" rel="bookmark" title="Permalink to devproxy2 version 2.1.1 released!">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2022/226-quilt-draw/" rel="bookmark"
                        title="Permalink to Quilt Draw update released!">Quilt Draw update released!</a></h1>
             </header>
@@ -333,47 +389,6 @@ to 320px, for an improved mobile experience.</p>
         </address>
 in <a href="https://sapphirecat.github.io/category/meta.html">Meta</a>&nbsp;
 [<a href="https://sapphirecat.github.io/2016/036-theme-update/" rel="bookmark" title="Permalink to Theme Updated">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2016/035-cloud-maker-0-8-4-release/" rel="bookmark"
-                       title="Permalink to cloud-maker 0.8.4: minor bugfixes">cloud-maker 0.8.4: minor bugfixes</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I discovered the module which I had intended to use as a version check
-via <tt class="docutils literal">python <span class="pre">-m</span> cloud_maker</tt> didn’t actually work. There was no way to
-execute it, to begin with. It also turned out that <tt class="docutils literal">sys.version_info</tt>
-wasn’t something that could be used with tuple unpacking in Python 2.</p>
-<p>The <tt class="docutils literal"><span class="pre">--help</span></tt> option used to print the usage information, and then a
-traceback for a <tt class="docutils literal">SystemExit</tt> exception. I narrowed this down to an
-overzealous <tt class="docutils literal">try/except</tt> block, so now it recognizes <tt class="docutils literal">SystemExit</tt>
-and <tt class="docutils literal">KeyboardInterrupt</tt> and skips the traceback for those.</p>
-<p>Finally, the documentation was enhanced slightly. I was rather
-surprised, when finding out how the version check was supposed to work,
-that there wasn’t the <em>slightest bit</em> in the README about how this was
-intended to be invoked. The slightest bit is now there.</p>
-<p>This release is available as <a class="reference external" href="https://github.com/sapphirecat/cloud-maker/releases">source on
-github</a>, and as
-a wheel <a class="reference external" href="https://pypi.python.org/pypi/cloud-maker/0.8.4">on PyPI</a>.</p>
-<p>Any and all bugs should be reported to the <a class="reference external" href="https://github.com/sapphirecat/cloud-maker/issues">issue
-tracker</a> on
-github.</p>
-<p><em>Note: this release was actually made January 24th, but I forgot to
-write about it here (and tag the git repository) until February 4th.</em></p>
-
-<footer class="post-info">
-        <abbr class="published" title="2016-02-04T00:00:00-05:00">
-                Published: 2016-02-04</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2016/035-cloud-maker-0-8-4-release/" rel="bookmark" title="Permalink to cloud-maker 0.8.4: minor bugfixes">permalink</a>]
 
 </footer><!-- /.post-info -->            </div><!-- /.entry-content -->
         </article></li>

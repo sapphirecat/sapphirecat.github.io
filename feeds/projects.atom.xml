@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-08-14T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw update released!</title><link href="https://sapphirecat.github.io/2022/226-quilt-draw/" rel="alternate"></link><published>2022-08-14T00:00:00-04:00</published><updated>2022-08-14T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-08-14:/2022/226-quilt-draw/</id><content type="html">&lt;p&gt;A new &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;quilt-draw&lt;/span&gt;&lt;/tt&gt; release has been made!  This may also be the world’s
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-08-15T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>devproxy2 version 2.1.1 released!</title><link href="https://sapphirecat.github.io/2022/227-devproxy2-2-1-1-released/" rel="alternate"></link><published>2022-08-15T00:00:00-04:00</published><updated>2022-08-15T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-08-15:/2022/227-devproxy2-2-1-1-released/</id><content type="html">&lt;p&gt;The &lt;tt class="docutils literal"&gt;devproxy2&lt;/tt&gt; 2.1.1 source &lt;a class="reference external" href="https://github.com/sapphirecat/devproxy2/releases/tag/v2.1.1"&gt;release&lt;/a&gt; has been made.&lt;/p&gt;
+&lt;p&gt;Due to an oversight, a 2.1.0 release was also made today, although the
+tag has been available in the repository for some time.&lt;/p&gt;
+&lt;div class="section" id="what-is-devproxy2"&gt;
+&lt;h2&gt;What is devproxy2?&lt;/h2&gt;
+&lt;p&gt;devproxy2 is an HTTP/HTTPS proxy server that redirects configured
+domains to an arbitrary destination.  This allows a Web browser to use a
+production URL to access a development VM/container.&lt;/p&gt;
+&lt;p&gt;In combination with an extension like &lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/proxy-switcher-and-manager/"&gt;Proxy Switcher and Manager&lt;/a&gt;,
+choosing production or development is fast and simple, and has a
+graphical status indication.&lt;/p&gt;
+&lt;p&gt;It is also possible to use NAT port forwarding (e.g. port 8080 on the
+host to port 80 on the VM) to access the development code, without the
+development code needing to know that the browser sees it on a
+nonstandard port.  That information is held only in the proxy and
+forwarding configurations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="release-details"&gt;
+&lt;h2&gt;Release Details&lt;/h2&gt;
+&lt;p&gt;Since the 2.1.0 release, the following changes have been made:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;The security posture has been improved, per &lt;a class="reference external" href="https://www.elttam.com/blog/golang-codereview/"&gt;advice&lt;/a&gt; that was posted
+on r/netsec.&lt;/li&gt;
+&lt;li&gt;The default ports for servers are applied correctly; this feature was
+broken in 2.1.0 with the switch to go-toml 2.x.&lt;/li&gt;
+&lt;li&gt;The author is using Podman for testing instead of Docker.&lt;/li&gt;
+&lt;li&gt;Dependencies have been updated.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Please file any problems in GitHub &lt;a class="reference external" href="https://github.com/sapphirecat/devproxy2/issues"&gt;issues&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="one-last-thing"&gt;
+&lt;h2&gt;One Last Thing&lt;/h2&gt;
+&lt;p&gt;Please consider using Firefox and maybe even donating to Mozilla.  The
+web needs genuine competition to remain free and open.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Projects"></category></entry><entry><title>Quilt Draw update released!</title><link href="https://sapphirecat.github.io/2022/226-quilt-draw/" rel="alternate"></link><published>2022-08-14T00:00:00-04:00</published><updated>2022-08-14T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-08-14:/2022/226-quilt-draw/</id><content type="html">&lt;p&gt;A new &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;quilt-draw&lt;/span&gt;&lt;/tt&gt; release has been made!  This may also be the world’s
 first announcement of its existence, outside of appearing in a GitHub
 repository.&lt;/p&gt;
 &lt;p&gt;To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Dark Reader

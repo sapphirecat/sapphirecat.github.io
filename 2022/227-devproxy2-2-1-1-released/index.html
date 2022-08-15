@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>devproxy2 version 2.1.1 released!</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/reset.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/main.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/pygment.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/typogrify.css">
+        <link href="//fonts.googleapis.com/css?family=Overlock:700" rel="stylesheet" type="text/css">
+
+        <link href="https://sapphirecat.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="sapphirecat Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://sapphirecat.github.io/">sapphirecat: <em>the user pages!</em></a></h1>
+                <nav><ul>
+                    <li><a href="https://sapphirecat.github.io/category/meta.html">Meta</a></li>
+                    <li class="active"><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">devproxy2 version 2.1.1 released!</h1>
+    </header>
+
+    <div class="entry-content">
+      <p>The <tt class="docutils literal">devproxy2</tt> 2.1.1 source <a class="reference external" href="https://github.com/sapphirecat/devproxy2/releases/tag/v2.1.1">release</a> has been made.</p>
+<p>Due to an oversight, a 2.1.0 release was also made today, although the
+tag has been available in the repository for some time.</p>
+<div class="section" id="what-is-devproxy2">
+<h2>What is devproxy2?</h2>
+<p>devproxy2 is an HTTP/HTTPS proxy server that redirects configured
+domains to an arbitrary destination.  This allows a Web browser to use a
+production URL to access a development VM/container.</p>
+<p>In combination with an extension like <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/proxy-switcher-and-manager/">Proxy Switcher and Manager</a>,
+choosing production or development is fast and simple, and has a
+graphical status indication.</p>
+<p>It is also possible to use NAT port forwarding (e.g. port 8080 on the
+host to port 80 on the VM) to access the development code, without the
+development code needing to know that the browser sees it on a
+nonstandard port.  That information is held only in the proxy and
+forwarding configurations.</p>
+</div>
+<div class="section" id="release-details">
+<h2>Release Details</h2>
+<p>Since the 2.1.0 release, the following changes have been made:</p>
+<ol class="arabic simple">
+<li>The security posture has been improved, per <a class="reference external" href="https://www.elttam.com/blog/golang-codereview/">advice</a> that was posted
+on r/netsec.</li>
+<li>The default ports for servers are applied correctly; this feature was
+broken in 2.1.0 with the switch to go-toml 2.x.</li>
+<li>The author is using Podman for testing instead of Docker.</li>
+<li>Dependencies have been updated.</li>
+</ol>
+<p>Please file any problems in GitHub <a class="reference external" href="https://github.com/sapphirecat/devproxy2/issues">issues</a>.</p>
+</div>
+<div class="section" id="one-last-thing">
+<h2>One Last Thing</h2>
+<p>Please consider using Firefox and maybe even donating to Mozilla.  The
+web needs genuine competition to remain free and open.</p>
+</div>
+
+<footer class="post-info">
+        <abbr class="published" title="2022-08-15T00:00:00-04:00">
+                Published: 2022-08-15</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2022/227-devproxy2-2-1-1-released/" rel="bookmark" title="Permalink to devproxy2 version 2.1.1 released!">permalink</a>]
+
+</footer><!-- /.post-info -->    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>sapphirecat's...</h2>
+                        <ul><li><a href="https://sapphirecat.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li><li><a href="https://github.com/sapphirecat">github</a></li><li><a href="https://www.decodednode.com/">tech blog</a></li><li><a href="https://www.sapphirepaw.org/">ye olde www</a></li></ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, <a href="https://python.org">Python</a>, and
+                a theme originally from <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

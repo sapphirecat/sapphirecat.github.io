@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-04-20T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>dynacache version 1.1.2 released!</title><link href="https://sapphirecat.github.io/2022/110-dynacache-1-1-2-released/" rel="alternate"></link><published>2022-04-20T00:00:00-04:00</published><updated>2022-04-20T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-04-20:/2022/110-dynacache-1-1-2-released/</id><content type="html">&lt;p&gt;The &lt;tt class="docutils literal"&gt;dynacache&lt;/tt&gt; 1.1.2 &lt;a class="reference external" href="https://github.com/sapphirecat/dynacache/releases/tag/v1.1.2"&gt;release&lt;/a&gt; is made available to the public in binary form
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-08-14T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw update released!</title><link href="https://sapphirecat.github.io/2022/226-quilt-draw/" rel="alternate"></link><published>2022-08-14T00:00:00-04:00</published><updated>2022-08-14T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-08-14:/2022/226-quilt-draw/</id><content type="html">&lt;p&gt;A new &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;quilt-draw&lt;/span&gt;&lt;/tt&gt; release has been made!  This may also be the world’s
+first announcement of its existence, outside of appearing in a GitHub
+repository.&lt;/p&gt;
+&lt;p&gt;To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Dark Reader
+completely destroys the UI elements.  Please turn off Dark Reader for the
+site.&lt;/p&gt;
+&lt;div class="section" id="what-is-quilt-draw"&gt;
+&lt;h2&gt;What is quilt-draw?&lt;/h2&gt;
+&lt;p&gt;Quilt Draw is a quarter-square triangle designing tool.  It lets you pick a
+set of colors, then modify a single quilt block using them. A preview of a
+full quilt using the block is generated in real time.  There are also options
+for adding borders and sashing to the preview.&lt;/p&gt;
+&lt;p&gt;Finally, there are options to download both the block itself, and the quilt
+preview.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-is-new"&gt;
+&lt;h2&gt;What is new?&lt;/h2&gt;
+&lt;p&gt;When the width of the window exceeded 1600 pixels, there were coordinate
+errors.  They are now fixed.  It’s a hack, but it works.&lt;/p&gt;
+&lt;p&gt;I have also updated the components (the color picker) to the latest version.
+The main code still targets ES6/2015, so there should be few issues, even on
+older computers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="technical-support"&gt;
+&lt;h2&gt;Technical Support&lt;/h2&gt;
+&lt;p&gt;There is none.  This project is strictly for amusement.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Projects"></category></entry><entry><title>dynacache version 1.1.2 released!</title><link href="https://sapphirecat.github.io/2022/110-dynacache-1-1-2-released/" rel="alternate"></link><published>2022-04-20T00:00:00-04:00</published><updated>2022-04-20T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-04-20:/2022/110-dynacache-1-1-2-released/</id><content type="html">&lt;p&gt;The &lt;tt class="docutils literal"&gt;dynacache&lt;/tt&gt; 1.1.2 &lt;a class="reference external" href="https://github.com/sapphirecat/dynacache/releases/tag/v1.1.2"&gt;release&lt;/a&gt; is made available to the public in binary form
 for AMD64 (v2 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels"&gt;architecture level&lt;/a&gt;) Linux.&lt;/p&gt;
 &lt;div class="section" id="what-is-dynacache"&gt;
 &lt;h2&gt;What is dynacache?&lt;/h2&gt;

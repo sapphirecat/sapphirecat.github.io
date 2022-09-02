@@ -26,6 +26,55 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2022/245-quilt-draw-guides/" rel="bookmark"
+                       title="Permalink to Quilt Draw: Dark Mode, Flip Tool, Guides">Quilt Draw: Dark Mode, Flip Tool, Guides</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>A new Quilt Draw release has been made!  To use it, go to its <a class="reference external" href="https://sapphirecat.github.io/quilt-draw/">repository
+page</a>.  <strong>Known issue:</strong> Dark Reader completely destroys the UI elements.
+Please turn off Dark Reader for the site.</p>
+<div class="section" id="whats-new">
+<h2>What’s new?</h2>
+<p>A native dark theme has been added.  If the browser reports that the page
+should be rendered in dark mode, then an updated theme will be applied.</p>
+<p>A “Flip” tool has been added.  Left-click (primary click) will flip a square
+horizontally, and right-click (secondary click) will flip it vertically.  This
+complements the “Spin” tool, because some multi-color designs are asymmetric
+and can’t be spun into all configurations.</p>
+<p>Finally, an option for guides to be added to the block editor is available, to
+help visualize the individual square boundaries.  If the guides are active on
+the page, then the download will also include them.</p>
+</div>
+<div class="section" id="what-is-quilt-draw">
+<h2>What is quilt-draw?</h2>
+<p>Quilt Draw is a quarter-square triangle designing tool.  It lets you pick a
+set of colors, then modify a single quilt block using them. A preview of a
+full quilt using the block is generated in real time.  There are also options
+for adding borders and sashing to the preview.</p>
+<p>Finally, there are options to download both the block itself, and the quilt
+preview.</p>
+</div>
+<div class="section" id="technical-support">
+<h2>Technical Support</h2>
+<p>There is none.  This project is strictly for amusement.</p>
+</div>
+
+<footer class="post-info">
+        <abbr class="published" title="2022-09-02T00:00:00-04:00">
+                Published: 2022-09-02</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2022/245-quilt-draw-guides/" rel="bookmark" title="Permalink to Quilt Draw: Dark Mode, Flip Tool, Guides">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2022/227-devproxy2-2-1-1-released/" rel="bookmark"
                        title="Permalink to devproxy2 version 2.1.1 released!">devproxy2 version 2.1.1 released!</a></h1>
             </header>
@@ -371,51 +420,6 @@ write about it here (and tag the git repository) until February 4th.</em></p>
         </address>
 in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
 [<a href="https://sapphirecat.github.io/2016/035-cloud-maker-0-8-4-release/" rel="bookmark" title="Permalink to cloud-maker 0.8.4: minor bugfixes">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/356-cloud-maker-0-8-3-release/" rel="bookmark"
-                       title="Permalink to cloud-maker 0.8.3: new config variable, accurate requirements">cloud-maker 0.8.3: new config variable, accurate requirements</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>The 0.8.3 release adds an <tt class="docutils literal">INI_DIR</tt> variable that will be substituted
-into values in the configuration file, allowing for paths to be
-specified relative to the config file. It turned out that this was a
-feature I wanted, to keep the bundled data somewhat more local than
-requiring a fixed path under <tt class="docutils literal">HOME</tt>.</p>
-<p>While testing this change, I discovered that the Python 3 line prior to
-3.3.4 had a bug in the <tt class="docutils literal">tarfile</tt> module. When using the module exactly
-as I am (with an externally-provided file object and gzip compression),
-the tar data doesn’t get written into the gzip stream on disk.</p>
-<p>That was reported as <a class="reference external" href="http://bugs.python.org/issue20238">issue 20238</a>
-and fixed by the final releases of 3.3.4 and 3.4.0, while 2.7 has never
-been affected.</p>
-<p>Due to the widespread availability of 2.7 on systems that packaged
-affected versions of Python, I decided the pragmatic path would be to
-recommend Python 2 on those systems and raise the Python 3 version
-requirement to 3.3.4. I haven’t isolated the fix by diffing Python
-releases, nor do I know what I would need to patch over in order to work
-around it.</p>
-<p>This release is available as <a class="reference external" href="https://github.com/sapphirecat/cloud-maker/releases">source on
-github</a>, and as
-a wheel <a class="reference external" href="https://pypi.python.org/pypi/cloud-maker/0.8.3">on PyPI</a>.</p>
-<p>Any and all bugs should be reported to the <a class="reference external" href="https://github.com/sapphirecat/cloud-maker/issues">issue
-tracker</a> on
-github.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2015-12-22T00:00:00-05:00">
-                Published: 2015-12-22</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/356-cloud-maker-0-8-3-release/" rel="bookmark" title="Permalink to cloud-maker 0.8.3: new config variable, accurate requirements">permalink</a>]
 
 </footer><!-- /.post-info -->            </div><!-- /.entry-content -->
         </article></li>

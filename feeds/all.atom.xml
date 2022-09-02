@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-08-15T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>devproxy2 version 2.1.1 released!</title><link href="https://sapphirecat.github.io/2022/227-devproxy2-2-1-1-released/" rel="alternate"></link><published>2022-08-15T00:00:00-04:00</published><updated>2022-08-15T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-08-15:/2022/227-devproxy2-2-1-1-released/</id><content type="html">&lt;p&gt;The &lt;tt class="docutils literal"&gt;devproxy2&lt;/tt&gt; 2.1.1 source &lt;a class="reference external" href="https://github.com/sapphirecat/devproxy2/releases/tag/v2.1.1"&gt;release&lt;/a&gt; has been made.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-09-02T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw: Dark Mode, Flip Tool, Guides</title><link href="https://sapphirecat.github.io/2022/245-quilt-draw-guides/" rel="alternate"></link><published>2022-09-02T00:00:00-04:00</published><updated>2022-09-02T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-09-02:/2022/245-quilt-draw-guides/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
+page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Dark Reader completely destroys the UI elements.
+Please turn off Dark Reader for the site.&lt;/p&gt;
+&lt;div class="section" id="whats-new"&gt;
+&lt;h2&gt;What’s new?&lt;/h2&gt;
+&lt;p&gt;A native dark theme has been added.  If the browser reports that the page
+should be rendered in dark mode, then an updated theme will be applied.&lt;/p&gt;
+&lt;p&gt;A “Flip” tool has been added.  Left-click (primary click) will flip a square
+horizontally, and right-click (secondary click) will flip it vertically.  This
+complements the “Spin” tool, because some multi-color designs are asymmetric
+and can’t be spun into all configurations.&lt;/p&gt;
+&lt;p&gt;Finally, an option for guides to be added to the block editor is available, to
+help visualize the individual square boundaries.  If the guides are active on
+the page, then the download will also include them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-is-quilt-draw"&gt;
+&lt;h2&gt;What is quilt-draw?&lt;/h2&gt;
+&lt;p&gt;Quilt Draw is a quarter-square triangle designing tool.  It lets you pick a
+set of colors, then modify a single quilt block using them. A preview of a
+full quilt using the block is generated in real time.  There are also options
+for adding borders and sashing to the preview.&lt;/p&gt;
+&lt;p&gt;Finally, there are options to download both the block itself, and the quilt
+preview.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="technical-support"&gt;
+&lt;h2&gt;Technical Support&lt;/h2&gt;
+&lt;p&gt;There is none.  This project is strictly for amusement.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Projects"></category></entry><entry><title>devproxy2 version 2.1.1 released!</title><link href="https://sapphirecat.github.io/2022/227-devproxy2-2-1-1-released/" rel="alternate"></link><published>2022-08-15T00:00:00-04:00</published><updated>2022-08-15T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-08-15:/2022/227-devproxy2-2-1-1-released/</id><content type="html">&lt;p&gt;The &lt;tt class="docutils literal"&gt;devproxy2&lt;/tt&gt; 2.1.1 source &lt;a class="reference external" href="https://github.com/sapphirecat/devproxy2/releases/tag/v2.1.1"&gt;release&lt;/a&gt; has been made.&lt;/p&gt;
 &lt;p&gt;Due to an oversight, a 2.1.0 release was also made today, although the
 tag has been available in the repository for some time.&lt;/p&gt;
 &lt;div class="section" id="what-is-devproxy2"&gt;

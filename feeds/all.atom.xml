@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-09-02T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw: Dark Mode, Flip Tool, Guides</title><link href="https://sapphirecat.github.io/2022/245-quilt-draw-guides/" rel="alternate"></link><published>2022-09-02T00:00:00-04:00</published><updated>2022-09-02T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-09-02:/2022/245-quilt-draw-guides/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-09-23T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw: Downloads in Pale Moon</title><link href="https://sapphirecat.github.io/2022/266-quilt-draw-pale-moon/" rel="alternate"></link><published>2022-09-23T00:00:00-04:00</published><updated>2022-09-23T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-09-23:/2022/266-quilt-draw-pale-moon/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
+page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Please turn off Dark Reader for the site.&lt;/p&gt;
+&lt;p&gt;This is a small release to fix the download buttons in &lt;a class="reference external" href="https://www.palemoon.org/"&gt;Pale Moon&lt;/a&gt; 31, and
+presumably, all previous versions.  I will be testing the non-updated version
+of Pale Moon included with Fossapup64 9.5, and making any additional updates
+that prove to be necessary.&lt;/p&gt;
+&lt;p&gt;I have also learned that Quilt Draw &lt;em&gt;does not&lt;/em&gt; work in Windows XP, due to my
+choice of color picker library.  No changes are expected in that situation, but
+it would have been cool if it had worked.&lt;/p&gt;
+&lt;div class="section" id="why-am-i-doing-this"&gt;
+&lt;h2&gt;Why am I doing this?&lt;/h2&gt;
+&lt;p&gt;Accessibility is important.&lt;/p&gt;
+&lt;p&gt;I have &lt;em&gt;used&lt;/em&gt; Pale Moon, and I understand it has a ton of shortcomings for the
+self-styled &amp;quot;modern&amp;quot; Web.  But that makes it doubly important: clearly, the
+people who are &lt;em&gt;using&lt;/em&gt; Pale Moon, &lt;strong&gt;need it.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(To look at the situation from another angle, this is the logical extension of
+when I would write for &amp;quot;the version of the programming language that shipped in
+Debian Stable.&amp;quot; I do not wish to unreasonably stifle users.)&lt;/p&gt;
+&lt;p&gt;Can we truly say that we &amp;quot;value&amp;quot; something, if we have never made the slightest
+sacrifice for it?&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Projects"></category></entry><entry><title>Quilt Draw: Dark Mode, Flip Tool, Guides</title><link href="https://sapphirecat.github.io/2022/245-quilt-draw-guides/" rel="alternate"></link><published>2022-09-02T00:00:00-04:00</published><updated>2022-09-02T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-09-02:/2022/245-quilt-draw-guides/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
 page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Dark Reader completely destroys the UI elements.
 Please turn off Dark Reader for the site.&lt;/p&gt;
 &lt;div class="section" id="whats-new"&gt;

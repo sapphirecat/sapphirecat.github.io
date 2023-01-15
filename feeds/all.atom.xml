@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-09-23T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw: Downloads in Pale Moon</title><link href="https://sapphirecat.github.io/2022/266-quilt-draw-pale-moon/" rel="alternate"></link><published>2022-09-23T00:00:00-04:00</published><updated>2022-09-23T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-09-23:/2022/266-quilt-draw-pale-moon/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2023-01-15T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Slim4 http-interop adapter 1.0.2 / 1.1.0</title><link href="https://sapphirecat.github.io/2023/015-slim-interop-1-1/" rel="alternate"></link><published>2023-01-15T00:00:00-05:00</published><updated>2023-01-15T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2023-01-15:/2023/015-slim-interop-1-1/</id><content type="html">&lt;p&gt;Following the reporting (and subsequent fixing) of issue #1,
+&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;sapphirecat/slim4-http-interop-adapter&lt;/span&gt;&lt;/tt&gt; has two new versions:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;1.0.2 updates the &lt;tt class="docutils literal"&gt;composer.json&lt;/tt&gt; to reject Slim 4.11 and newer, while
+retaining compatibility with PHP 7.1&lt;/li&gt;
+&lt;li&gt;1.1.0 requires Slim 4.11+ and PHP 7.4+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Links: &lt;a class="reference external" href="https://github.com/sapphirecat/slim4-http-interop-adapter"&gt;GitHub&lt;/a&gt; and &lt;a class="reference external" href="https://packagist.org/packages/sapphirecat/slim4-http-interop-adapter"&gt;Packagist&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is a change from the versioning policy previously listed in the
+CHANGELOG.md file.&lt;/strong&gt;  It previously stated that removing support for a PHP
+version would be a major release.  However, this is not how the wider PHP
+ecosystem treats it, and it does not appear to be &lt;em&gt;necessary&lt;/em&gt; under Semantic
+Versioning.  In particular, this package has no user-facing API, and
+therefore, nothing is broken by this change.&lt;/p&gt;
+&lt;p&gt;Since release, I have found that the 1.0 branch's support of PHP 7.1 is overly
+broad.  By the time my package is useful (Slim 4.9.0), Slim itself required
+PHP 7.3.  Nevertheless, v1.0.2 keeps &lt;strong&gt;all&lt;/strong&gt; support that v1.0.0 promised.&lt;/p&gt;
+</content><category term="Projects"></category></entry><entry><title>Quilt Draw: Downloads in Pale Moon</title><link href="https://sapphirecat.github.io/2022/266-quilt-draw-pale-moon/" rel="alternate"></link><published>2022-09-23T00:00:00-04:00</published><updated>2022-09-23T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-09-23:/2022/266-quilt-draw-pale-moon/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
 page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Please turn off Dark Reader for the site.&lt;/p&gt;
 &lt;p&gt;This is a small release to fix the download buttons in &lt;a class="reference external" href="https://www.palemoon.org/"&gt;Pale Moon&lt;/a&gt; 31, and
 presumably, all previous versions.  I will be testing the non-updated version

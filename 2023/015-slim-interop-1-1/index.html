@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Slim4 http-interop adapter 1.0.2 / 1.1.0</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/reset.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/main.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/pygment.css">
+        <link rel="stylesheet" href="https://sapphirecat.github.io/theme/css/typogrify.css">
+        <link href="//fonts.googleapis.com/css?family=Overlock:700" rel="stylesheet" type="text/css">
+
+        <link href="https://sapphirecat.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="sapphirecat Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://sapphirecat.github.io/">sapphirecat: <em>the user pages!</em></a></h1>
+                <nav><ul>
+                    <li><a href="https://sapphirecat.github.io/category/meta.html">Meta</a></li>
+                    <li class="active"><a href="https://sapphirecat.github.io/category/projects.html">Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">Slim4 http-interop adapter 1.0.2 / 1.1.0</h1>
+    </header>
+
+    <div class="entry-content">
+      <p>Following the reporting (and subsequent fixing) of issue #1,
+<tt class="docutils literal"><span class="pre">sapphirecat/slim4-http-interop-adapter</span></tt> has two new versions:</p>
+<ul class="simple">
+<li>1.0.2 updates the <tt class="docutils literal">composer.json</tt> to reject Slim 4.11 and newer, while
+retaining compatibility with PHP 7.1</li>
+<li>1.1.0 requires Slim 4.11+ and PHP 7.4+</li>
+</ul>
+<p>Links: <a class="reference external" href="https://github.com/sapphirecat/slim4-http-interop-adapter">GitHub</a> and <a class="reference external" href="https://packagist.org/packages/sapphirecat/slim4-http-interop-adapter">Packagist</a>.</p>
+<p><strong>This is a change from the versioning policy previously listed in the
+CHANGELOG.md file.</strong>  It previously stated that removing support for a PHP
+version would be a major release.  However, this is not how the wider PHP
+ecosystem treats it, and it does not appear to be <em>necessary</em> under Semantic
+Versioning.  In particular, this package has no user-facing API, and
+therefore, nothing is broken by this change.</p>
+<p>Since release, I have found that the 1.0 branch's support of PHP 7.1 is overly
+broad.  By the time my package is useful (Slim 4.9.0), Slim itself required
+PHP 7.3.  Nevertheless, v1.0.2 keeps <strong>all</strong> support that v1.0.0 promised.</p>
+
+<footer class="post-info">
+        <abbr class="published" title="2023-01-15T00:00:00-05:00">
+                Published: 2023-01-15</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2023/015-slim-interop-1-1/" rel="bookmark" title="Permalink to Slim4 http-interop adapter 1.0.2 / 1.1.0">permalink</a>]
+
+</footer><!-- /.post-info -->    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>sapphirecat's...</h2>
+                        <ul><li><a href="https://sapphirecat.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li><li><a href="https://github.com/sapphirecat">github</a></li><li><a href="https://www.decodednode.com/">tech blog</a></li><li><a href="https://www.sapphirepaw.org/">ye olde www</a></li></ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, <a href="https://python.org">Python</a>, and
+                a theme originally from <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

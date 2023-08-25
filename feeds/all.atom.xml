@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2023-01-15T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Slim4 http-interop adapter 1.0.2 / 1.1.0</title><link href="https://sapphirecat.github.io/2023/015-slim-interop-1-1/" rel="alternate"></link><published>2023-01-15T00:00:00-05:00</published><updated>2023-01-15T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2023-01-15:/2023/015-slim-interop-1-1/</id><content type="html">&lt;p&gt;Following the reporting (and subsequent fixing) of issue #1,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2023-08-24T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw: Downloads in Pale Moon</title><link href="https://sapphirecat.github.io/2023/236-quilt-draw-xp-vista/" rel="alternate"></link><published>2023-08-24T00:00:00-04:00</published><updated>2023-08-24T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2023-08-24:/2023/236-quilt-draw-xp-vista/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
+page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Please turn off Dark Reader for the site.&lt;/p&gt;
+&lt;p&gt;This is a small release to add support for Firefox 52 ESR (Windows XP and
+Vista.)  There are no new features.&lt;/p&gt;
+&lt;p&gt;I would like to give a special salute to &lt;a class="reference external" href="https://www.mozilla.org/"&gt;Mozilla&lt;/a&gt; for supporting operating
+systems longer than &lt;em&gt;strictly&lt;/em&gt; necessary.&lt;/p&gt;
+&lt;div class="section" id="why-am-i-doing-this"&gt;
+&lt;h2&gt;Why am I doing this?&lt;/h2&gt;
+&lt;p&gt;In 2012, I bought a PC, and work bought a Late 2012 model iMac for my desk.
+That iMac ended up coming home for the pandemic.  They finally replaced it with
+a System76 laptop (at my request) in 2022, because we have a large investment in
+VirtualBox and x86, and sometimes they want to fly me to other offices.  I
+didn’t rate it as likely that the last Intel systems from Apple would get a full
+decade of support, but that’s what I’m targeting for them.&lt;/p&gt;
+&lt;p&gt;As for my PC… I am writing this on it.  It’s still running.  It has had an SSD
+upgrade, of course, because Windows Compatibility Telemetry was such a drag on
+the hard disk, and it’s had an extra 4 GB of RAM put in (freed up by upgrading a
+different system.)&lt;/p&gt;
+&lt;p&gt;It started life with Windows 7, just barely, then moved on through 8, 8.1, and
+10.  It might live to see the end of support for Windows 10… and then Microsoft
+thinks it should become e-waste, just like the iMac.&lt;/p&gt;
+&lt;p&gt;But they’re both perfectly functional machines!&lt;/p&gt;
+&lt;p&gt;What if I wanted to use hardware for 15 years?  20 years?  Could I make my own
+code run on systems that old?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-does-it-work"&gt;
+&lt;h2&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;I discovered that Pickr had an ES5 build (well-supported in IE9+, and crucially,
+Firefox 52), so I switched to that instead.  That allowed for the initial
+Windows XP/Vista support.&lt;/p&gt;
+&lt;p&gt;Unreleased but fully tested, I have updated the toolchain for Quilt Draw itself.
+It used to directly use the Typescript 3.9 compiler.  This has been replaced
+with Webpack and the usual suspects.  The new build system supports Typescript
+5.1, so now I can catch up on years of new features, and push more of the future
+deeper into the past.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Projects"></category></entry><entry><title>Slim4 http-interop adapter 1.0.2 / 1.1.0</title><link href="https://sapphirecat.github.io/2023/015-slim-interop-1-1/" rel="alternate"></link><published>2023-01-15T00:00:00-05:00</published><updated>2023-01-15T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2023-01-15:/2023/015-slim-interop-1-1/</id><content type="html">&lt;p&gt;Following the reporting (and subsequent fixing) of issue #1,
 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;sapphirecat/slim4-http-interop-adapter&lt;/span&gt;&lt;/tt&gt; has two new versions:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;1.0.2 updates the &lt;tt class="docutils literal"&gt;composer.json&lt;/tt&gt; to reject Slim 4.11 and newer, while

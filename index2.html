@@ -26,6 +26,41 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2019/020-zora-colorscheme-vim-gvim-neovim/" rel="bookmark"
+                       title="Permalink to zora colorscheme for Vim/GVim/Neovim">zora colorscheme for Vim/GVim/Neovim</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>I created a new colorscheme! It’s based on Zora’s Domain and the
+surrounding areas in <em>The Legend of Zelda: Breath of the Wild.</em> It’s a
+light theme, making heavy use of blue, green, purple, and salmon.</p>
+<p>It’s now available from
+<a class="reference external" href="https://github.com/sapphirecat/zora-theme-vim/">zora-theme-vim</a> on
+my GitHub.</p>
+<p>Examples:</p>
+<div class="line-block">
+<div class="line"><a class="reference external image-reference" href="https://sapphirecat.github.io/images/zora/php.png"><img alt="An example using PHP code" src="https://sapphirecat.github.io/images/zora/php.png" /></a></div>
+<div class="line"><a class="reference external image-reference" href="https://sapphirecat.github.io/images/zora/multi.png"><img alt="An example of multiple windows and cursor line option" src="https://sapphirecat.github.io/images/zora/multi.png" /></a></div>
+</div>
+<p>This is less of an experiment and more of a complete theme than ashgren
+was, so it’s correspondingly more complete, <strong>and</strong> it supports
+256-color terminals.</p>
+
+<footer class="post-info">
+        <abbr class="published" title="2019-01-20T00:00:00-05:00">
+                Published: 2019-01-20</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2019/020-zora-colorscheme-vim-gvim-neovim/" rel="bookmark" title="Permalink to zora colorscheme for Vim/GVim/Neovim">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2019/017-a-trio-of-vim-plugins/" rel="bookmark"
                        title="Permalink to Three Vim Plugins">Three Vim Plugins</a></h1>
             </header>
@@ -308,201 +343,13 @@ in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&n
 
 </footer><!-- /.post-info -->            </div><!-- /.entry-content -->
         </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="bookmark"
-                       title="Permalink to fedora-pack to be superseded by cloud-maker">fedora-pack to be superseded by cloud-maker</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>When we <a class="reference external" href="https://sapphirecat.github.io/2015/013-fedora-pack-config/">last left
-off</a>, I had sketched
-out a config file for fedora-pack, then neglected it when I finally
-accepted that <a class="reference external" href="https://www.decodednode.com/2015/02/perl-is-dying.html">Perl is
-dying</a>.</p>
-<p>Seven months later, fedora-pack is undergoing a rewrite to Python. It’s
-equally widespread (or easy to install) and includes a ton of batteries.
-I’ve always liked that.</p>
-<p>But that’s only half the change. I’ve been trying to simplify and
-streamline the code, to make it <em>more straightforward</em> even at the
-expense of some flexibility and testability—there are, after all, no
-tests, no extensions, and no users. As far as I know.</p>
-<p>That’s resulted in a rather different codebase, because of two
-realizations:</p>
-<ol class="arabic simple">
-<li>At work, I don’t use the multi-version capability. What if
-<tt class="docutils literal">make_provisioner</tt> just installs the platform’s <em>default</em> version?
-It would have to know a lot less about distros and versions.</li>
-<li>At work, our bundled scripts install our own necessary packages (such
-as git) in addition to the core languages. What if
-<tt class="docutils literal">make_provisioner</tt> doesn’t bother offering <em>package
-preinstallation?</em> On the one side of the process is <tt class="docutils literal"><span class="pre">cloud-init</span></tt>,
-if preinstallation is important. On the other, the runner script can
-install its own choice of language packages. Now <tt class="docutils literal">make_provisioner</tt>
-doesn’t even have to care about distros (or features or packages)
-<strong>at all</strong>, as long as it can have a distro-agnostic SFX stub.</li>
-</ol>
-<p>Things seem to be going well so far; expect a code dump on github by
-November. I want to use cloud-maker for work’s AMI builder, instead of a
-hacked fedora-pack fork, and the Ubuntu 15.10 release will be a good
-time to change that.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2015-09-22T00:00:00-04:00">
-                Published: 2015-09-22</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="bookmark" title="Permalink to fedora-pack to be superseded by cloud-maker">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark"
-                       title="Permalink to fedora-pack Configuration File Update">fedora-pack Configuration File Update</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I mentioned <a class="reference external" href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/">last
-post</a> that I
-was thinking of going with “a config file of some sort.” Plans have
-formed to use INI format, and the parser is written. (Between the
-desires to be pure-perl all the way down and to keep embed size down, I
-didn’t find any pre-written parsers that suited me on CPAN.)</p>
-<p>So, it’s probably going to end up something like this:</p>
-<pre class="literal-block">
-; we basically just use this for supervisord, no venv needed
-[python2]
-min_version = 2.7
-with_virtualenv = 0
-
-; legacy app can’t handle `carton exec`
-[perl]
-with_carton = 0
-
-[php]
-min_version=5.4
-
-[main]
-install = &quot;php perl python2&quot; ; known to fedora-pack
-add_packages = &quot;php5-fpm libmoose-perl&quot; ; known to apt/yum
-</pre>
-<p>As a bonus, the sections organize the options so that languages can
-define their own options <em>fully independently,</em> without having to avoid
-naming conflicts in the CLI options.</p>
-<p>fedora-pack will continue to install all the per-language options by
-default, since actually using them is best practice, as I understand
-things.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2015-01-13T00:00:00-05:00">
-                Published: 2015-01-13</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark" title="Permalink to fedora-pack Configuration File Update">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="bookmark"
-                       title="Permalink to More fedora-pack Options">More fedora-pack Options</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I’ve noticed that <tt class="docutils literal"><span class="pre">python-pip</span></tt> and <tt class="docutils literal">virtualenv</tt> packages on Ubuntu
-Utopic have similar dependencies—but the latter is on <tt class="docutils literal"><span class="pre">*-whl</span></tt> packages
-and the former is not. Since I use Python but <em>not</em> virtualenv in my own
-server build, it ‘would be nice’ to skip the automatic installation of
-it by fedora-pack.</p>
-<p>Of course, in order to support such a thing, fedora-pack clearly needs
-more options for finer control. Yet, it seems like the global option
-parser isn’t the perfect place for language-related options, so the
-<tt class="docutils literal"><span class="pre">App::FedoraPack::System</span></tt> class tree may spawn some additional
-argument-related functions.</p>
-<p>I may finally go with a config file of some sort. The command line <em>is</em>
-getting unwieldy already.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2014-12-21T00:00:00-05:00">
-                Published: 2014-12-21</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="bookmark" title="Permalink to More fedora-pack Options">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2014/353-user-pages-finally/" rel="bookmark"
-                       title="Permalink to User Pages… Finally">User Pages… Finally</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I didn’t really have a place to pre-announce changes to my repos, so I
-made one.</p>
-<p>This spawned a small adventure through
-<a class="reference external" href="https://www.staticgen.com/">staticgen</a> in order to find a static
-site generator. I really wanted it to run on Win64, because I have to
-fire up a VM to update
-<a class="reference external" href="https://www.sapphirepaw.org/propaganda">propaganda</a> since it was
-built for a POSIX world. For style points, I went for ones written in
-languages I already have installed.</p>
-<p>So after trying <a class="reference external" href="http://gohugo.io/">Hugo</a>,
-<a class="reference external" href="https://sculpin.io/">Sculpin</a>, <a class="reference external" href="http://phrozn.info/">Phrozn</a>, and
-<a class="reference external" href="http://getpelican.com/">Pelican</a>, the last one happened to be a
-winner.</p>
-<p>I’m kind of sad Hugo didn’t work out, since it seems fast and nicely
-built, but I couldn’t get it to understand about generating pages with
-<em>relative</em> URLs so that I could preview them with the theme applying
-properly.</p>
-<p>One of the PHP frameworks wasn’t PHAR-aware, and tried to use
-<tt class="docutils literal">DIRECTORY_SEPARATOR</tt> to build the path of an XML file to load… but
-that creates an invalid URL when <tt class="docutils literal">DIRECTORY_SEPARATOR</tt> isn’t ‘/’.</p>
-<p>Pelican has its warts, to be sure (there’s no real themes gallery, just
-a <a class="reference external" href="https://github.com/getpelican/pelican-themes">bunch of githubs</a>
-with screenshots of varying quality) but it’s working and I can work
-with it. And I’m not locked into keeping all my pages on github because
-Octopress is secretly managing the repository for me; I wrote my own
-publish script. Although magic is <em>convenient,</em> it turns out that I
-always want to understand the next layer down. Even if it’s just a small
-bit of knowledge I never use, it’s comforting to know I wouldn’t be
-hopelessly adrift if GitHub Pages closed down.</p>
-<p>Anyway, look for future updates about my repositories here on
-<a class="reference external" href="https://sapphirecat.github.io/">sapphirecat.github.io</a>. I want to
-get away from the “randomly dump breaking changes on an unsuspecting
-world” model of development.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2014-12-19T00:00:00-05:00">
-                Published: 2014-12-19</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/meta.html">Meta</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2014/353-user-pages-finally/" rel="bookmark" title="Permalink to User Pages… Finally">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
         <a href="https://sapphirecat.github.io/index.html">&#8647;</a>
         <a href="https://sapphirecat.github.io/index.html">&laquo;</a>
-    Page 2 / 2
+    Page 2 / 3
+        <a href="https://sapphirecat.github.io/index3.html">&raquo;</a>
+        <a href="https://sapphirecat.github.io/index3.html">&#8649;</a>
 </p>
             </section><!-- /#content -->
         <section id="extras" class="body">

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2023-08-24T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw: Supports Windows XP/Vista</title><link href="https://sapphirecat.github.io/2023/236-quilt-draw-xp-vista/" rel="alternate"></link><published>2023-08-24T00:00:00-04:00</published><updated>2023-08-24T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2023-08-24:/2023/236-quilt-draw-xp-vista/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2024-02-12T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Zora Update, Garden Vim Themes Coming</title><link href="https://sapphirecat.github.io/2024/043-zora-update-garden-vim-theme-coming/" rel="alternate"></link><published>2024-02-12T00:00:00-05:00</published><updated>2024-02-12T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2024-02-12:/2024/043-zora-update-garden-vim-theme-coming/</id><content type="html">&lt;p&gt;This is a small pre-announcement; nothing is available yet.&lt;/p&gt;
+&lt;p&gt;I have another update planned for &lt;a class="reference external" href="https://github.com/sapphirecat/zora-theme-vim"&gt;the Zora vim theme&lt;/a&gt;, namely, support for
+&lt;a class="reference external" href="https://github.com/vim-airline/vim-airline"&gt;airline&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A previous update to Zora is that version 1.1.0 (renamed and) documented a
+config option, the &lt;tt class="docutils literal"&gt;g:zora_use_gui_colors&lt;/tt&gt; variable.  Internally, the theme
+loads &lt;em&gt;only&lt;/em&gt; GUI colors if the GUI is running, the &lt;tt class="docutils literal"&gt;termguicolors&lt;/tt&gt; option is
+known+set… or if the variable is set to 1.  Otherwise, it falls back to checking
+&lt;tt class="docutils literal"&gt;t_Co&lt;/tt&gt; to load the 256- or 16-color theme, depending on the terminal’s
+capabilities.&lt;/p&gt;
+&lt;p&gt;I am also designing a new theme called Garden, a GUI-oriented theme in warm
+earthy tones with a dark green background.  This theme will have &lt;a class="reference external" href="https://github.com/vim-airline/vim-airline"&gt;airline&lt;/a&gt;
+support from the start.  A &lt;em&gt;serviceable&lt;/em&gt; 256-color variant will be provided,
+but the background color will be gray instead of green.&lt;/p&gt;
+&lt;p&gt;Stay tuned for the final release!&lt;/p&gt;
+</content><category term="Projects"></category></entry><entry><title>Quilt Draw: Supports Windows XP/Vista</title><link href="https://sapphirecat.github.io/2023/236-quilt-draw-xp-vista/" rel="alternate"></link><published>2023-08-24T00:00:00-04:00</published><updated>2023-08-24T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2023-08-24:/2023/236-quilt-draw-xp-vista/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
 page&lt;/a&gt;.  &lt;strong&gt;Known issue:&lt;/strong&gt; Please turn off Dark Reader for the site.&lt;/p&gt;
 &lt;p&gt;This is a small release to add support for Firefox 52 ESR (Windows XP and
 Vista.)  There are no new features.&lt;/p&gt;

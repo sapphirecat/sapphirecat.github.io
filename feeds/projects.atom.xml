@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2024-02-12T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Zora Update, Garden Vim Themes Coming</title><link href="https://sapphirecat.github.io/2024/043-zora-update-garden-vim-theme-coming/" rel="alternate"></link><published>2024-02-12T00:00:00-05:00</published><updated>2024-02-12T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2024-02-12:/2024/043-zora-update-garden-vim-theme-coming/</id><content type="html">&lt;p&gt;This is a small pre-announcement; nothing is available yet.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Projects</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2024-02-17T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Garden Vim Theme v1.0</title><link href="https://sapphirecat.github.io/2024/048-garden-vim-1-0/" rel="alternate"></link><published>2024-02-17T00:00:00-05:00</published><updated>2024-02-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2024-02-17:/2024/048-garden-vim-1-0/</id><content type="html">&lt;p&gt;I am pleased to announce the first release of &lt;a class="reference external" href="https://github.com/sapphirecat/garden-vim"&gt;garden-vim&lt;/a&gt;, a dark, earthy
+theme primarily for GUI (gVim, neovim, and &lt;a class="reference external" href="https://github.com/termstandard/colors"&gt;truecolor terminals&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;Screenshots, with &lt;a class="reference external" href="https://github.com/vim-airline/vim-airline"&gt;airline&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;a class="reference external image-reference" href="https://sapphirecat.github.io/images/garden/garden-php.png"&gt;&lt;img alt="Garden theme with PHP code" src="https://sapphirecat.github.io/images/garden/garden-php.png" /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external image-reference" href="https://sapphirecat.github.io/images/garden/garden-multi.png"&gt;&lt;img alt="Garden theme with multiple windows" src="https://sapphirecat.github.io/images/garden/garden-multi.png" /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Due to the limitations of the 256-color XTerm palette, there exists a 256-color
+theme, but it is not recommended.  One should use &lt;tt class="docutils literal"&gt;:set termguicolors&lt;/tt&gt;
+to activate truecolor rendering in terminal windows for the best experience.
+Alternatively, check &lt;tt class="docutils literal"&gt;if &lt;span class="pre"&gt;has('gui_running')&lt;/span&gt;&lt;/tt&gt; to choose a different theme for
+the terminal in the &lt;tt class="docutils literal"&gt;else&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;p&gt;The airline theme is designed to change only the “a” region background when
+changing modes.  Changing the entire line seemed rather distracting.&lt;/p&gt;
+&lt;p&gt;Once again, the repository is github.com/sapphirecat/&lt;a class="reference external" href="https://github.com/sapphirecat/garden-vim"&gt;garden-vim&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy hacking!&lt;/p&gt;
+</content><category term="Projects"></category></entry><entry><title>Zora Update, Garden Vim Themes Coming</title><link href="https://sapphirecat.github.io/2024/043-zora-update-garden-vim-theme-coming/" rel="alternate"></link><published>2024-02-12T00:00:00-05:00</published><updated>2024-02-12T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2024-02-12:/2024/043-zora-update-garden-vim-theme-coming/</id><content type="html">&lt;p&gt;This is a small pre-announcement; nothing is available yet.&lt;/p&gt;
 &lt;p&gt;I have another update planned for &lt;a class="reference external" href="https://github.com/sapphirecat/zora-theme-vim"&gt;the Zora vim theme&lt;/a&gt;, namely, support for
 &lt;a class="reference external" href="https://github.com/vim-airline/vim-airline"&gt;airline&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A previous update to Zora is that version 1.1.0 (renamed and) documented a

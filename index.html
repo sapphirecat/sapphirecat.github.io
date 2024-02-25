@@ -38,13 +38,20 @@ theme primarily for GUI (gVim, neovim, and <a class="reference external" href="h
 <div class="line"><a class="reference external image-reference" href="https://sapphirecat.github.io/images/garden/garden-php.png"><img alt="Garden theme with PHP code" src="https://sapphirecat.github.io/images/garden/garden-php.png" /></a></div>
 <div class="line"><a class="reference external image-reference" href="https://sapphirecat.github.io/images/garden/garden-multi.png"><img alt="Garden theme with multiple windows" src="https://sapphirecat.github.io/images/garden/garden-multi.png" /></a></div>
 </div>
+<p>The airline theme is designed to change only the leftmost background when
+changing modes.  Changing the entire line seemed rather distracting.</p>
 <p>Due to the limitations of the 256-color XTerm palette, there exists a 256-color
 theme, but it is not recommended.  One should use <tt class="docutils literal">:set termguicolors</tt>
 to activate truecolor rendering in terminal windows for the best experience.
 Alternatively, check <tt class="docutils literal">if <span class="pre">has('gui_running')</span></tt> to choose a different theme for
-the terminal in the <tt class="docutils literal">else</tt> branch.</p>
-<p>The airline theme is designed to change only the “a” region background when
-changing modes.  Changing the entire line seemed rather distracting.</p>
+the terminal in the <tt class="docutils literal">else</tt> branch of your vimrc file:</p>
+<pre class="literal-block">
+if has('gui_running')
+  colorscheme garden
+else
+  colorscheme desert
+endif
+</pre>
 <p>Once again, the repository is github.com/sapphirecat/<a class="reference external" href="https://github.com/sapphirecat/garden-vim">garden-vim</a>.</p>
 <p>Happy hacking!</p>
 

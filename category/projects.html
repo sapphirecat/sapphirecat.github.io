@@ -26,6 +26,61 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2024/073-quilt-draw-tabs/" rel="bookmark"
+                       title="Permalink to Quilt Draw 2.0.0: Tabbed Interface">Quilt Draw 2.0.0: Tabbed Interface</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>A new Quilt Draw release has been made!  To use it, go to its <a class="reference external" href="https://sapphirecat.github.io/quilt-draw/">repository
+page</a>.  <em>Possible issue:</em> Please turn off Dark Reader for the site when using a
+browser that supports prefers-color-scheme, because the site already has a dark
+theme for that environment.</p>
+<p>This is a <strong>major</strong> release that restructures the entire UI into tabs.  The
+“Block” tab retains the editor, block controls, and a mini-preview.  A larger
+preview, and controls for the quilt as a whole, are on the “Quilt” tab.
+Finally, there is a “Print” tab with a print-oriented layout.  It should show
+the block at a reasonable size, along with the whole preview, on a single page.</p>
+<p>Printing is meant to work <em>reasonably well</em> on either A4 or US Letter paper
+sizes with “fit width” as the scaling option.  Please file an <a class="reference external" href="https://github.com/sapphirecat/quilt-draw/issues/">issue</a> if there
+are any problems.</p>
+<p>The tools for the block editor have been revamped to be graphical.</p>
+<p>The “spin” and “flip” tools have been reworked, so that <strong>all operations are
+available without a right-click</strong> function available.  That is, instead of a
+single “Flip” tool that chooses directions based entirely on the mouse button,
+there are distinct “↔” (horizontal flip) and “↕” (vertical flip) tools.  Each
+one <em>supports</em> right-click to do the related operation, but it is no longer
+<em>required.</em></p>
+<p>Minor features include:</p>
+<ul class="simple">
+<li>The main/secondary color layout is vertical, to reduce confusion when using
+left-handed mouse button layout (the primary color is now above, rather than
+to the left of, the secondary color.)</li>
+<li>The mouse cursor changes shape over the block editor, based on the currently
+selected tool, as an additional hint.</li>
+<li>New site/app icons have been created.</li>
+</ul>
+<p>This release has been tagged in the repository as <tt class="docutils literal">v2.0.0</tt>; going forward,
+each release will be given a version number, according to the <a class="reference external" href="https://semver.org/">Semantic
+Versioning</a> standard.</p>
+<p>Support for Firefox 52 ESR (Windows XP/Vista) and Pale Moon has been retained.
+I would like to give a special salute to <a class="reference external" href="https://www.mozilla.org/">Mozilla</a> for supporting operating
+systems longer than <em>strictly</em> necessary.</p>
+
+<footer class="post-info">
+        <abbr class="published" title="2024-03-13T00:00:00-04:00">
+                Published: 2024-03-13</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2024/073-quilt-draw-tabs/" rel="bookmark" title="Permalink to Quilt Draw 2.0.0: Tabbed Interface">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2024/048-garden-vim-1-0/" rel="bookmark"
                        title="Permalink to Garden Vim Theme v1.0">Garden Vim Theme v1.0</a></h1>
             </header>
@@ -392,79 +447,12 @@ in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&n
 
 </footer><!-- /.post-info -->            </div><!-- /.entry-content -->
         </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2022/110-dynacache-1-1-2-released/" rel="bookmark"
-                       title="Permalink to dynacache version 1.1.2 released!">dynacache version 1.1.2 released!</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>The <tt class="docutils literal">dynacache</tt> 1.1.2 <a class="reference external" href="https://github.com/sapphirecat/dynacache/releases/tag/v1.1.2">release</a> is made available to the public in binary form
-for AMD64 (v2 <a class="reference external" href="https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels">architecture level</a>) Linux.</p>
-<div class="section" id="what-is-dynacache">
-<h2>What is dynacache?</h2>
-<p>dynacache is a memcached server that stores data in Amazon DynamoDb.  It
-recognizes the session-locking protocol of PHP's memcached extension,
-converting them into locks in DynamoDb that are compatible with the AWS
-SDK for PHP.  Data is <em>nearly</em> compatible: the data is stored as a
-binary type, because the SDK for Go requires a string type to be valid
-UTF-8, and PHP makes no such promise.</p>
-<p>For best results with PHP, set the following options in the relevant
-<tt class="docutils literal">php.ini</tt> file:</p>
-<pre class="literal-block">
-; dynacache doesn't support the binary protocol
-memcached.sess_binary_protocol = Off
-memcached.sess_prefix = memc.sess.key.
-; use dynacache to store sessions
-session.save_handler = memcached
-session.save_path = localhost:11211
-</pre>
-<p>For available configuration, <tt class="docutils literal">dynacache</tt> supports the standard AWS SDK
-locations for credentials, and some optional settings shown when running
-<tt class="docutils literal">dynacache <span class="pre">-help</span></tt>.</p>
-</div>
-<div class="section" id="release-details">
-<h2>Release Details</h2>
-<p>Since the 1.0.0 release, which is the last public version, the following
-changes have been made:</p>
-<ol class="arabic simple">
-<li>The build is done with Go 1.18.1 with <tt class="docutils literal">GOAMD64=v2</tt> set.</li>
-<li>Response to <tt class="docutils literal">version</tt> is closer to the release version number than
-before.  It's still not <em>strictly</em> correct, unfortunately.</li>
-<li>CLI flag <tt class="docutils literal"><span class="pre">-verbose</span></tt> and env var <tt class="docutils literal">DYNACACHE_VERBOSE</tt> (uint8) for
-controlling the logging level.</li>
-<li>Missing <tt class="docutils literal">append</tt> and <tt class="docutils literal">prepend</tt> commands are accepted.</li>
-<li>Idle clients will be disconnected during normal operation.</li>
-<li>Graceful server shutdown happens within a bounded time limit.</li>
-<li>Repeated signals will cause an immediate shutdown.</li>
-</ol>
-<p><em>This project is not Open Source due to the reappointment of Richard
-Stallman to the FSF Board.</em>  sapphirecat stands opposed to child
-pornography, sex trafficking, sexism, and redefining rape.  Leadership
-creates the culture of the movement, and that culture gets associated
-implicitly with any participant.  It is imperative, then, for leaders to
-own their mistakes.</p>
-</div>
-
-<footer class="post-info">
-        <abbr class="published" title="2022-04-20T00:00:00-04:00">
-                Published: 2022-04-20</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2022/110-dynacache-1-1-2-released/" rel="bookmark" title="Permalink to dynacache version 1.1.2 released!">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
             </ol><!-- /#posts-list -->
 <nav>
   <ul>
-    <li>Page 1 / 2</li>
+    <li>Page 1 / 3</li>
         <li><a href="https://sapphirecat.github.io/category/projects2.html">&rang;</a></li>
-        <li><a href="https://sapphirecat.github.io/category/projects2.html">&Rang;</a></li>
+        <li><a href="https://sapphirecat.github.io/category/projects3.html">&Rang;</a></li>
   </ul>
 </nav>
             </section><!-- /#content -->

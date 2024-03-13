@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2024-02-17T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>Garden Vim Theme v1.0</title><link href="https://sapphirecat.github.io/2024/048-garden-vim-1-0/" rel="alternate"></link><published>2024-02-17T00:00:00-05:00</published><updated>2024-02-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2024-02-17:/2024/048-garden-vim-1-0/</id><content type="html">&lt;p&gt;I am pleased to announce the first release of &lt;a class="reference external" href="https://github.com/sapphirecat/garden-vim"&gt;garden-vim&lt;/a&gt;, a dark, earthy
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/all.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2024-03-13T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Quilt Draw 2.0.0: Tabbed Interface</title><link href="https://sapphirecat.github.io/2024/073-quilt-draw-tabs/" rel="alternate"></link><published>2024-03-13T00:00:00-04:00</published><updated>2024-03-13T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2024-03-13:/2024/073-quilt-draw-tabs/</id><content type="html">&lt;p&gt;A new Quilt Draw release has been made!  To use it, go to its &lt;a class="reference external" href="https://sapphirecat.github.io/quilt-draw/"&gt;repository
+page&lt;/a&gt;.  &lt;em&gt;Possible issue:&lt;/em&gt; Please turn off Dark Reader for the site when using a
+browser that supports prefers-color-scheme, because the site already has a dark
+theme for that environment.&lt;/p&gt;
+&lt;p&gt;This is a &lt;strong&gt;major&lt;/strong&gt; release that restructures the entire UI into tabs.  The
+“Block” tab retains the editor, block controls, and a mini-preview.  A larger
+preview, and controls for the quilt as a whole, are on the “Quilt” tab.
+Finally, there is a “Print” tab with a print-oriented layout.  It should show
+the block at a reasonable size, along with the whole preview, on a single page.&lt;/p&gt;
+&lt;p&gt;Printing is meant to work &lt;em&gt;reasonably well&lt;/em&gt; on either A4 or US Letter paper
+sizes with “fit width” as the scaling option.  Please file an &lt;a class="reference external" href="https://github.com/sapphirecat/quilt-draw/issues/"&gt;issue&lt;/a&gt; if there
+are any problems.&lt;/p&gt;
+&lt;p&gt;The tools for the block editor have been revamped to be graphical.&lt;/p&gt;
+&lt;p&gt;The “spin” and “flip” tools have been reworked, so that &lt;strong&gt;all operations are
+available without a right-click&lt;/strong&gt; function available.  That is, instead of a
+single “Flip” tool that chooses directions based entirely on the mouse button,
+there are distinct “↔” (horizontal flip) and “↕” (vertical flip) tools.  Each
+one &lt;em&gt;supports&lt;/em&gt; right-click to do the related operation, but it is no longer
+&lt;em&gt;required.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Minor features include:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The main/secondary color layout is vertical, to reduce confusion when using
+left-handed mouse button layout (the primary color is now above, rather than
+to the left of, the secondary color.)&lt;/li&gt;
+&lt;li&gt;The mouse cursor changes shape over the block editor, based on the currently
+selected tool, as an additional hint.&lt;/li&gt;
+&lt;li&gt;New site/app icons have been created.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This release has been tagged in the repository as &lt;tt class="docutils literal"&gt;v2.0.0&lt;/tt&gt;; going forward,
+each release will be given a version number, according to the &lt;a class="reference external" href="https://semver.org/"&gt;Semantic
+Versioning&lt;/a&gt; standard.&lt;/p&gt;
+&lt;p&gt;Support for Firefox 52 ESR (Windows XP/Vista) and Pale Moon has been retained.
+I would like to give a special salute to &lt;a class="reference external" href="https://www.mozilla.org/"&gt;Mozilla&lt;/a&gt; for supporting operating
+systems longer than &lt;em&gt;strictly&lt;/em&gt; necessary.&lt;/p&gt;
+</content><category term="Projects"></category></entry><entry><title>Garden Vim Theme v1.0</title><link href="https://sapphirecat.github.io/2024/048-garden-vim-1-0/" rel="alternate"></link><published>2024-02-17T00:00:00-05:00</published><updated>2024-02-17T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2024-02-17:/2024/048-garden-vim-1-0/</id><content type="html">&lt;p&gt;I am pleased to announce the first release of &lt;a class="reference external" href="https://github.com/sapphirecat/garden-vim"&gt;garden-vim&lt;/a&gt;, a dark, earthy
 theme primarily for GUI (gVim, neovim, and &lt;a class="reference external" href="https://github.com/termstandard/colors"&gt;truecolor terminals&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;Screenshots, with &lt;a class="reference external" href="https://github.com/vim-airline/vim-airline"&gt;airline&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="line-block"&gt;

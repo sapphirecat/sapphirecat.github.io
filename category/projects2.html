@@ -26,6 +26,73 @@
                 <ol id="posts-list" class="hfeed" start="8">
         <li><article class="hentry">
             <header>
+                <h1><a href="https://sapphirecat.github.io/2022/110-dynacache-1-1-2-released/" rel="bookmark"
+                       title="Permalink to dynacache version 1.1.2 released!">dynacache version 1.1.2 released!</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <p>The <tt class="docutils literal">dynacache</tt> 1.1.2 <a class="reference external" href="https://github.com/sapphirecat/dynacache/releases/tag/v1.1.2">release</a> is made available to the public in binary form
+for AMD64 (v2 <a class="reference external" href="https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels">architecture level</a>) Linux.</p>
+<div class="section" id="what-is-dynacache">
+<h2>What is dynacache?</h2>
+<p>dynacache is a memcached server that stores data in Amazon DynamoDb.  It
+recognizes the session-locking protocol of PHP's memcached extension,
+converting them into locks in DynamoDb that are compatible with the AWS
+SDK for PHP.  Data is <em>nearly</em> compatible: the data is stored as a
+binary type, because the SDK for Go requires a string type to be valid
+UTF-8, and PHP makes no such promise.</p>
+<p>For best results with PHP, set the following options in the relevant
+<tt class="docutils literal">php.ini</tt> file:</p>
+<pre class="literal-block">
+; dynacache doesn't support the binary protocol
+memcached.sess_binary_protocol = Off
+memcached.sess_prefix = memc.sess.key.
+; use dynacache to store sessions
+session.save_handler = memcached
+session.save_path = localhost:11211
+</pre>
+<p>For available configuration, <tt class="docutils literal">dynacache</tt> supports the standard AWS SDK
+locations for credentials, and some optional settings shown when running
+<tt class="docutils literal">dynacache <span class="pre">-help</span></tt>.</p>
+</div>
+<div class="section" id="release-details">
+<h2>Release Details</h2>
+<p>Since the 1.0.0 release, which is the last public version, the following
+changes have been made:</p>
+<ol class="arabic simple">
+<li>The build is done with Go 1.18.1 with <tt class="docutils literal">GOAMD64=v2</tt> set.</li>
+<li>Response to <tt class="docutils literal">version</tt> is closer to the release version number than
+before.  It's still not <em>strictly</em> correct, unfortunately.</li>
+<li>CLI flag <tt class="docutils literal"><span class="pre">-verbose</span></tt> and env var <tt class="docutils literal">DYNACACHE_VERBOSE</tt> (uint8) for
+controlling the logging level.</li>
+<li>Missing <tt class="docutils literal">append</tt> and <tt class="docutils literal">prepend</tt> commands are accepted.</li>
+<li>Idle clients will be disconnected during normal operation.</li>
+<li>Graceful server shutdown happens within a bounded time limit.</li>
+<li>Repeated signals will cause an immediate shutdown.</li>
+</ol>
+<p><em>This project is not Open Source due to the reappointment of Richard
+Stallman to the FSF Board.</em>  sapphirecat stands opposed to child
+pornography, sex trafficking, sexism, and redefining rape.  Leadership
+creates the culture of the movement, and that culture gets associated
+implicitly with any participant.  It is imperative, then, for leaders to
+own their mistakes.</p>
+</div>
+
+<footer class="post-info">
+        <abbr class="published" title="2022-04-20T00:00:00-04:00">
+                Published: 2022-04-20</abbr>
+
+        <address class="vcard author">
+                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a href="https://sapphirecat.github.io/2022/110-dynacache-1-1-2-released/" rel="bookmark" title="Permalink to dynacache version 1.1.2 released!">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry">
+            <header>
                 <h1><a href="https://sapphirecat.github.io/2020/326-devproxy2-version-2-0-0-released/" rel="bookmark"
                        title="Permalink to devproxy2 version 2.0.0 released!">devproxy2 version 2.0.0 released!</a></h1>
             </header>
@@ -307,181 +374,14 @@ in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&n
 
 </footer><!-- /.post-info -->            </div><!-- /.entry-content -->
         </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/295-cloud-maker-0-8-0-release/" rel="bookmark"
-                       title="Permalink to cloud-maker 0.8.0">cloud-maker 0.8.0</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I didn’t actually test the OVA export I got from <tt class="docutils literal">fedora2ova</tt>, but
-<tt class="docutils literal"><span class="pre">cloud-maker</span></tt> has been pushed to my <a class="reference external" href="https://github.com/sapphirecat/cloud-maker">cloud-maker
-repo</a>. Happy Wily
-Werewolf Release Day!</p>
-<p>The repo is currently designed to run in-place with either of these
-forms:</p>
-<pre class="literal-block">
-python -m make_provisioner --help
-python . provision --help
-</pre>
-<p>I’d like to add a <tt class="docutils literal">setup.py</tt> so it can be published to PyPI and
-abandoned, but that’s not ready yet.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2015-10-22T00:00:00-04:00">
-                Published: 2015-10-22</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/295-cloud-maker-0-8-0-release/" rel="bookmark" title="Permalink to cloud-maker 0.8.0">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="bookmark"
-                       title="Permalink to fedora-pack to be superseded by cloud-maker">fedora-pack to be superseded by cloud-maker</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>When we <a class="reference external" href="https://sapphirecat.github.io/2015/013-fedora-pack-config/">last left
-off</a>, I had sketched
-out a config file for fedora-pack, then neglected it when I finally
-accepted that <a class="reference external" href="https://www.decodednode.com/2015/02/perl-is-dying.html">Perl is
-dying</a>.</p>
-<p>Seven months later, fedora-pack is undergoing a rewrite to Python. It’s
-equally widespread (or easy to install) and includes a ton of batteries.
-I’ve always liked that.</p>
-<p>But that’s only half the change. I’ve been trying to simplify and
-streamline the code, to make it <em>more straightforward</em> even at the
-expense of some flexibility and testability—there are, after all, no
-tests, no extensions, and no users. As far as I know.</p>
-<p>That’s resulted in a rather different codebase, because of two
-realizations:</p>
-<ol class="arabic simple">
-<li>At work, I don’t use the multi-version capability. What if
-<tt class="docutils literal">make_provisioner</tt> just installs the platform’s <em>default</em> version?
-It would have to know a lot less about distros and versions.</li>
-<li>At work, our bundled scripts install our own necessary packages (such
-as git) in addition to the core languages. What if
-<tt class="docutils literal">make_provisioner</tt> doesn’t bother offering <em>package
-preinstallation?</em> On the one side of the process is <tt class="docutils literal"><span class="pre">cloud-init</span></tt>,
-if preinstallation is important. On the other, the runner script can
-install its own choice of language packages. Now <tt class="docutils literal">make_provisioner</tt>
-doesn’t even have to care about distros (or features or packages)
-<strong>at all</strong>, as long as it can have a distro-agnostic SFX stub.</li>
-</ol>
-<p>Things seem to be going well so far; expect a code dump on github by
-November. I want to use cloud-maker for work’s AMI builder, instead of a
-hacked fedora-pack fork, and the Ubuntu 15.10 release will be a good
-time to change that.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2015-09-22T00:00:00-04:00">
-                Published: 2015-09-22</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/265-cloud-maker-replacing-fedora-pack/" rel="bookmark" title="Permalink to fedora-pack to be superseded by cloud-maker">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark"
-                       title="Permalink to fedora-pack Configuration File Update">fedora-pack Configuration File Update</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I mentioned <a class="reference external" href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/">last
-post</a> that I
-was thinking of going with “a config file of some sort.” Plans have
-formed to use INI format, and the parser is written. (Between the
-desires to be pure-perl all the way down and to keep embed size down, I
-didn’t find any pre-written parsers that suited me on CPAN.)</p>
-<p>So, it’s probably going to end up something like this:</p>
-<pre class="literal-block">
-; we basically just use this for supervisord, no venv needed
-[python2]
-min_version = 2.7
-with_virtualenv = 0
-
-; legacy app can’t handle `carton exec`
-[perl]
-with_carton = 0
-
-[php]
-min_version=5.4
-
-[main]
-install = &quot;php perl python2&quot; ; known to fedora-pack
-add_packages = &quot;php5-fpm libmoose-perl&quot; ; known to apt/yum
-</pre>
-<p>As a bonus, the sections organize the options so that languages can
-define their own options <em>fully independently,</em> without having to avoid
-naming conflicts in the CLI options.</p>
-<p>fedora-pack will continue to install all the per-language options by
-default, since actually using them is best practice, as I understand
-things.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2015-01-13T00:00:00-05:00">
-                Published: 2015-01-13</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2015/013-fedora-pack-config/" rel="bookmark" title="Permalink to fedora-pack Configuration File Update">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry">
-            <header>
-                <h1><a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="bookmark"
-                       title="Permalink to More fedora-pack Options">More fedora-pack Options</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <p>I’ve noticed that <tt class="docutils literal"><span class="pre">python-pip</span></tt> and <tt class="docutils literal">virtualenv</tt> packages on Ubuntu
-Utopic have similar dependencies—but the latter is on <tt class="docutils literal"><span class="pre">*-whl</span></tt> packages
-and the former is not. Since I use Python but <em>not</em> virtualenv in my own
-server build, it ‘would be nice’ to skip the automatic installation of
-it by fedora-pack.</p>
-<p>Of course, in order to support such a thing, fedora-pack clearly needs
-more options for finer control. Yet, it seems like the global option
-parser isn’t the perfect place for language-related options, so the
-<tt class="docutils literal"><span class="pre">App::FedoraPack::System</span></tt> class tree may spawn some additional
-argument-related functions.</p>
-<p>I may finally go with a config file of some sort. The command line <em>is</em>
-getting unwieldy already.</p>
-
-<footer class="post-info">
-        <abbr class="published" title="2014-12-21T00:00:00-05:00">
-                Published: 2014-12-21</abbr>
-
-        <address class="vcard author">
-                by                         <a class="url fn" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a href="https://sapphirecat.github.io/2014/355-more-fedora-pack-options/" rel="bookmark" title="Permalink to More fedora-pack Options">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
             </ol><!-- /#posts-list -->
 <nav>
   <ul>
         <li><a href="https://sapphirecat.github.io/category/projects.html">&Lang;</a></li>
         <li><a href="https://sapphirecat.github.io/category/projects.html">&lang;</a></li>
-    <li>Page 2 / 2</li>
+    <li>Page 2 / 3</li>
+        <li><a href="https://sapphirecat.github.io/category/projects3.html">&rang;</a></li>
+        <li><a href="https://sapphirecat.github.io/category/projects3.html">&Rang;</a></li>
   </ul>
 </nav>
             </section><!-- /#content -->

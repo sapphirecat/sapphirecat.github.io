@@ -12,7 +12,7 @@
 /***** Global *****/
 /* Body */
 body {
-	font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Lato, 'Noto Sans', Arial, sans-serif;
 	line-height:1.459; margin:0; padding:0; text-align:left;
 }
 @media tv {
@@ -28,8 +28,8 @@ h5 {font-size:1.125em}	/* 18px */
 h6 {font-size:1.000em}	/* browser default */
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight:700; line-height:1.1; margin-bottom:.8em; font-family:'Overlock', sans-serif;}
-
+	font-weight:bold; line-height:1.1; margin-bottom:.8em;
+	font-family:'Linux Biolinum O', Lato, 'Noto Sans', 'Liberation Sans', 'Helvetica Neue', Helvetica, sans-serif;}
 h3, h4, h5, h6 {margin-top:.8em;}
 
 /* Anchors */

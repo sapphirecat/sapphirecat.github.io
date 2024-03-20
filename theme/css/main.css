@@ -160,13 +160,13 @@ a:focus {text-decoration:underline !important;}
 #banner h1 em {font-size:0.56em;}
 
 /* Main Nav */
-#banner nav {font-size:1.143em; line-height:30px; margin:0 auto 2em auto; padding:0;}
+#banner nav {font-size:1.143em; line-height:30px; margin:0 auto 2em; padding:0;}
 #banner nav ul {list-style:none; margin:0 auto;}
 #banner nav li {display:inline-block; margin:0;}
 #banner nav a:link, #banner nav a:visited {display:inline-block; padding:5px 1.2em 8px;}
 
 /* Body *****************/
-#content {box-sizing:border-box; margin-bottom:2em; padding:20px 20px;}
+#content {box-sizing:border-box; margin-bottom:2em; padding:0.3em;}
 
 /* Extras *****************/
 #extras {margin:0 auto 2.25em auto; overflow:hidden;}
@@ -200,6 +200,7 @@ li:last-child .hentry, #content > .hentry {border:0; margin:0;}
 	#banner nav, #banner h1 a {border-radius:5px;}
 	#banner nav li:first-child a {border-top-left-radius:5px; border-bottom-left-radius:5px;}
 	#content, #about {border-radius:10px;}
+	#content {padding:2em 3em;}
 
 	div.note {max-width: 420px;}
 }

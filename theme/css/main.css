@@ -5,8 +5,7 @@
  * License:MIT <http://opensource.org/licenses/MIT>
  * Licensed by:Smashing Media GmbH <http://www.smashingmagazine.com/>
  * Original author:Enrique Ramírez <http://enrique-ramirez.com/>
- * Heavily modified by Sapphire Cat <https://www.sapphirepaw.org/>, because
- * this is the future.  border-radius works now!
+ * Heavily modified by Sapphire Cat <https://www.sapphirepaw.org/>
  */
 
 /***** Global *****/
@@ -14,9 +13,6 @@
 body {
 	font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Lato, 'Noto Sans', Arial, sans-serif;
 	line-height:1.459; margin:0; padding:0; text-align:left;
-}
-@media tv {
-	body {max-width: 640px;}
 }
 
 /* Headings */
@@ -33,7 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 h3, h4, h5, h6 {margin-top:.8em;}
 
 /* Anchors */
-a {outline:0;}
 a img {border:0px; text-decoration:none;}
 a:link, a:visited {padding:0 1px; text-decoration:underline;}
 
@@ -71,20 +66,26 @@ thead th {padding:.5em .4em; text-align:left;}
 tbody td {padding:.5em .4em;}
 
 /***** Layout *****/
-.body {clear:both; margin:0 auto; width:95%; max-width:800px; min-width:300px;}
+.body {clear:both; margin:0 auto;}
 img.right, figure.right {float:right; margin:0 0 2em 2em;}
 img.left, figure.left {float:left; margin:0 2em 2em 0;}
 img {max-width:100%;}
 
+#content nav ul {list-style-type:none; width:100%; text-align:center;}
+#content nav ul li {display:inline-block; margin:0.1em;}
+#content nav ul li a:link {text-decoration:none; display:inline-block; min-width:1em;}
+#content nav ul li a:hover, #content nav ul li a:focus {text-decoration:none;}
+
+ins {font-style:italic; font-family: monospace;}
 
 /* Visual theme *******/
 body {background:#14110C; color:#E3E2DA;}
 
 a:link, a:visited {color:#8EB9F2;}
-.body a:visited {text-decoration:none;}
 a:hover, a:focus {color:#AFEDF2;}
 a:active {color:#D9F2F5; background-color:inherit;}
-article a:focus, #about a:focus {background-color:#2B2C32; border-top-left-radius:0.3em; border-top-right-radius:0.3em;}
+article a:focus, #about a:focus {background:#2B2C32; border-top-left-radius:0.3em; border-top-right-radius:0.3em;}
+#content nav ul li a:hover, #content nav ul li a:focus {background:#2B2C32;}
 
 .body {background:#4A4542;}
 pre {background-color:#575351;}
@@ -94,64 +95,60 @@ pre {background-color:#575351;}
 #banner h1 a {color:#7285A7;}
 #banner h1 a:hover, #banner h1 a:active {background:none; color:#DADAE4;}
 #banner nav {background:#393F4A;}
-#banner nav a {color:#E7E7E7; text-decoration:none;}
+#banner nav a {color:#E7E7E7;}
 #banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited {
 	background:#7A3D4E; color:#FFF;}
 #banner h1 a:focus, #banner nav a:focus {background:#7A3D4E; color:#E7E7E7;}
 a:focus {text-decoration:underline !important;}
 
 /* articles */
-.hentry header a, .entry-title a {text-decoration:none; color:#DDD771;}
+.hentry header a, .entry-title a {text-decoration:none; color:#DDD777;}
 .hentry header a:hover, .hentry header a:focus, .entry-title a:hover, .entry-title a:focus {color:#FCF7A2;}
+
 
 /* footers */
 #extras {background:none;}
 #extras h2 {color:#7285A7;}
-#extras a:link, #extras a:visited {color:#E1E1E1; border-bottom:2px solid #7A3D4E; text-decoration:none;
-	border-top-left-radius:3px; border-top-right-radius:3px;}
-#extras a:hover, #extras a:focus {background:#7A3D4E;}
+#extras a:link, #extras a:visited {color:#E1E1E1; border-bottom:2px solid #7A3D4E;
+	border-top-left-radius:3px; border-top-right-radius:3px; text-decoration:none;}
+#extras a:hover, #extras a:focus {background:#7A3D4E; color:#E1E1E1;}
 #extras a:active {color:#FFF;}
 
-
 #about {background:#393F4A;}
-#about a {text-decoration:none;}
-
 #contentinfo {background:none;}
 
-/* support operating systems' new LIGHT mode! */
-@media (prefers-color-scheme: light) {
-	body {color:#14110C; background:#E3E3D5;}
+@media only screen and (prefers-color-scheme: light) {
+	body {background:#E3E3D5; color:#14110C;}
 
 	a:link, a:visited {color:#210E3C;}
-	.body a:visited {text-decoration:none;}
 	a:hover, a:focus {color:#100026;}
-	a:active {color:#000; background-color:inherit;}
-	article a:focus, #about a:focus {background-color:#FDFFF1;}
+	a:active {color:#000;}
+	article a:focus, #about a:focus {background:#FDFFF1;}
 
 	.body {background:#CDCEC8;}
 	pre {background-color:#BFBAC4;}
 
 	/* header */
-	#banner {background-color:inherit;}
 	#banner h1 a {color:#5E7091;}
-	#banner h1 a:hover, #banner h1 a:active {background:none; color:#415579;}
-	#banner nav, #about {background:#B2A7BD;}
-	#banner nav a {color:#202020; text-decoration:none;}
+	#banner h1 a:hover, #banner h1 a:active {color:#415579;}
+	#banner nav {background:#B2A7BD;}
+	#banner nav a {color:#202020;}
 	#banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited {
 		background:#775995; color:#FFF;}
 	#banner h1 a:focus, #banner nav a:focus {background:#775995; color:#FFF;}
-	a:focus {text-decoration:underline !important;}
 
 	/* articles */
-	.hentry header a, .entry-title a {text-decoration:none; color:#584197;}
-	.hentry header a:hover, .hentry header a:focus, .entry-title a:hover, .entry-title a:focus {color:#302157;}
+	.hentry header a, .entry-title a {color:#584197;}
+	.hentry header a:hover, .hentry header a:focus, .entry-title a:hover, .entry-title a:focus {
+		color:#302157;}
 
 	/* footers */
-	#extras {background:none;}
 	#extras h2 {color:#5E7091;}
-	#extras a:link, #extras a:visited {color:#775995; border-bottom-color: #775995;}
-	#extras a:hover, #extras a:focus {background:#775995;color:#FFF;}
+	#extras a:link, #extras a:visited {color:#202020; border-bottom-color:#775995;}
+	#extras a:hover, #extras a:focus {background:#775995; color:#FFF;}
 	#extras a:active {color:#FFF;}
+
+	#about {background:#B2A7BD;}
 }
 
 /* Header *****************/
@@ -159,21 +156,17 @@ a:focus {text-decoration:underline !important;}
 /* Banner */
 #banner {padding:2.2em 0 0;}
 #banner h1 {font-size:2.625em; margin-bottom:0.3em;}
-#banner h1 a {display:block; font-weight:bold; text-decoration:none; border-radius:5px;}
+#banner h1 a {display:block; font-weight:bold; text-decoration:none;}
 #banner h1 em {font-size:0.56em;}
 
 /* Main Nav */
-#banner nav {font-size:1.143em; line-height:30px;
-	margin:0 auto 2em auto; padding:0; border-radius:5px;}
+#banner nav {font-size:1.143em; line-height:30px; margin:0 auto 2em auto; padding:0;}
 #banner nav ul {list-style:none; margin:0 auto;}
 #banner nav li {display:inline-block; margin:0;}
 #banner nav a:link, #banner nav a:visited {display:inline-block; padding:5px 1.2em 8px;}
 
-#banner nav li:first-child a {border-top-left-radius:5px; border-bottom-left-radius:5px;}
-
-
 /* Body *****************/
-#content {box-sizing:border-box; margin-bottom:2em; padding:20px 20px; border-radius:10px;}
+#content {box-sizing:border-box; margin-bottom:2em; padding:20px 20px;}
 
 /* Extras *****************/
 #extras {margin:0 auto 2.25em auto; overflow:hidden;}
@@ -181,11 +174,9 @@ a:focus {text-decoration:underline !important;}
 #extras h2 {font-size:1.429em; margin-bottom:.25em; padding:0 3px;}
 #extras li {display:inline-block; margin:0 2%; width:29%; min-width:130px;}
 #extras a {display:block; padding:.3em .25em; margin-bottom: .85em; text-align: center;}
-/* unused social icons -> social.css */
 
 /* About *****************/
-#about {font-style:normal; text-align:left; margin-bottom:2em; padding:20px; overflow:hidden;
-	border-radius:10px;}
+#about {font-style:normal; text-align:left; margin-bottom:2em; padding:20px; overflow:hidden;}
 
 /*
 Footer
@@ -202,3 +193,13 @@ li:last-child .hentry, #content > .hentry {border:0; margin:0;}
 /* Blog Index */
 #posts-list {list-style:none; margin:0;}
 #posts-list .hentry {padding-left:10px; position:relative;}
+
+/* Desktop mode: bring out the bubbles, and the width limitations */
+@media only screen and (min-width: 1000px) {
+	.body {margin:0 auto; width:77%; max-width:1200px; border-radius:5px;}
+	#banner nav, #banner h1 a {border-radius:5px;}
+	#banner nav li:first-child a {border-top-left-radius:5px; border-bottom-left-radius:5px;}
+	#content, #about {border-radius:10px;}
+
+	div.note {max-width: 420px;}
+}

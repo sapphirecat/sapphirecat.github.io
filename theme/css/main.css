@@ -71,7 +71,7 @@ img.right, figure.right {float:right; margin:0 0 2em 2em;}
 img.left, figure.left {float:left; margin:0 2em 2em 0;}
 img {max-width:100%;}
 
-#content nav ul {list-style-type:none; width:100%; text-align:center;}
+#content nav ul {list-style-type:none; text-align:center;}
 #content nav ul li {display:inline-block; margin:0.1em;}
 #content nav ul li a:link {text-decoration:none; display:inline-block; min-width:1em;}
 #content nav ul li a:hover, #content nav ul li a:focus {text-decoration:none;}

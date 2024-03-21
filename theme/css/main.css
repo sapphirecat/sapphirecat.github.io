@@ -15,6 +15,11 @@ body {
 	line-height:1.459; margin:0; padding:0; text-align:left;
 }
 
+/* Skip-nav link */
+a#skipnav {position:absolute; left:0; top:-3em; padding:0.25em; border:1px dotted;
+	transition:top 0.3s ease-in;}
+a#skipnav:focus {top:0; transition:top 0.06s ease-out;}
+
 /* Headings */
 h1 {font-size:1.750em}	/* 28px */
 h2 {font-size:1.500em}	/* 24px */
@@ -188,7 +193,7 @@ Footer
 .hentry {display:block; clear:both; padding:0 0 1.5em;}
 li:last-child .hentry, #content > .hentry {border:0; margin:0;}
 #content > .hentry {padding:1em 0;}
-.entry-title {font-size:3em; margin-bottom:10px; margin-top:0;}
+.entry-title {font-size:2em;/*32px*/ margin-bottom:0.625em; margin-top:0;}
 
 /* Blog Index */
 #posts-list {list-style:none; margin:0;}

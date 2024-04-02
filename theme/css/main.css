@@ -1,12 +1,13 @@
-/* Name:Smashing HTML5
- * Date:July 2009
- * Description:Sample layout for HTML5 and CSS3 goodness.
- * Version:1.0
- * License:MIT <http://opensource.org/licenses/MIT>
- * Licensed by:Smashing Media GmbH <http://www.smashingmagazine.com/>
- * Original author:Enrique Ramírez <http://enrique-ramirez.com/>
- * Heavily modified by Sapphire Cat <https://www.sapphirepaw.org/>
- */
+/*
+	Name:Smashing HTML5
+	Date:July 2009
+	Description:Sample layout for HTML5 and CSS3 goodness.
+	Version:1.0
+	License:MIT <http://opensource.org/licenses/MIT>
+	Licensed by:Smashing Media GmbH <http://www.smashingmagazine.com/>
+	Original author:Enrique Ramírez <http://enrique-ramirez.com/>
+	Heavily modified by Sapphire Cat <https://www.sapphirepaw.org/>
+*/
 
 /***** Global *****/
 /* Body */
@@ -58,7 +59,7 @@ dl {margin:0 0 1.5em 0;}
 dt {font-weight:bold;}
 dd {margin-left:1.5em;}
 
-pre {padding:10px; overflow:auto;}
+pre {padding:0.625em; overflow:auto;}
 
 /* Quotes */
 blockquote {margin:20px; font-style:italic;}
@@ -72,9 +73,12 @@ tbody td {padding:.5em .4em;}
 
 /***** Layout *****/
 .body {clear:both; margin:0 auto;}
+.body-info {padding:0.2em;}
 img.right, figure.right {float:right; margin:0 0 2em 2em;}
 img.left, figure.left {float:left; margin:0 2em 2em 0;}
 img {max-width:100%;}
+
+article {contain:content;}
 
 #content nav ul {list-style-type:none; text-align:center;}
 #content nav ul li {display:inline-block; margin:0.1em;}
@@ -93,13 +97,14 @@ article a:focus, #about a:focus {background:#2B2C32; border-top-left-radius:0.3e
 #content nav ul li a:hover, #content nav ul li a:focus {background:#2B2C32;}
 
 .body {background:#4A4542;}
+.body-info {background:#393F4A;}
 pre {background-color:#575351;}
 
 /* header */
 #banner {background-color:inherit;}
 #banner h1 a {color:#7285A7;}
 #banner h1 a:hover, #banner h1 a:active {background:none; color:#DADAE4;}
-#banner nav {background:#393F4A;}
+#banner nav {background:#393F4A;} /* deprecated */
 #banner nav a {color:#E7E7E7;}
 #banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited {
 	background:#7A3D4E; color:#FFF;}
@@ -107,8 +112,8 @@ pre {background-color:#575351;}
 a:focus {text-decoration:underline !important;}
 
 /* articles */
-.hentry header a, .entry-title a {text-decoration:none; color:#DDD777;}
-.hentry header a:hover, .hentry header a:focus, .entry-title a:hover, .entry-title a:focus {color:#FCF7A2;}
+.h-entry header a, .entry-title a {text-decoration:none; color:#DDD777;}
+.h-entry header a:hover, .h-entry header a:focus, .entry-title a:hover, .entry-title a:focus {color:#FCF7A2;}
 
 
 /* footers */
@@ -119,8 +124,8 @@ a:focus {text-decoration:underline !important;}
 #extras a:hover, #extras a:focus {background:#7A3D4E; color:#E1E1E1;}
 #extras a:active {color:#FFF;}
 
-#about {background:#393F4A;}
-#contentinfo {background:none;}
+#about {background:#393F4A;} /* deprecated */
+#contentinfo {background:none;} /* mysterious */
 
 @media only screen and (prefers-color-scheme: light) {
 	body {background:#E3E3D5; color:#14110C;}
@@ -131,20 +136,21 @@ a:focus {text-decoration:underline !important;}
 	article a:focus, #about a:focus {background:#FDFFF1;}
 
 	.body {background:#CDCEC8;}
+	.body-info {background:#B2A7BD;}
 	pre {background-color:#BFBAC4;}
 
 	/* header */
 	#banner h1 a {color:#5E7091;}
 	#banner h1 a:hover, #banner h1 a:active {color:#415579;}
-	#banner nav {background:#B2A7BD;}
+	#banner nav {background:#B2A7BD;} /* deprecated */
 	#banner nav a {color:#202020;}
 	#banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited {
 		background:#775995; color:#FFF;}
 	#banner h1 a:focus, #banner nav a:focus {background:#775995; color:#FFF;}
 
 	/* articles */
-	.hentry header a, .entry-title a {color:#584197;}
-	.hentry header a:hover, .hentry header a:focus, .entry-title a:hover, .entry-title a:focus {
+	.h-entry header a, .entry-title a {color:#584197;}
+	.h-entry header a:hover, .h-entry header a:focus, .entry-title a:hover, .entry-title a:focus {
 		color:#302157;}
 
 	/* footers */
@@ -153,7 +159,7 @@ a:focus {text-decoration:underline !important;}
 	#extras a:hover, #extras a:focus {background:#775995; color:#FFF;}
 	#extras a:active {color:#FFF;}
 
-	#about {background:#B2A7BD;}
+	#about {background:#B2A7BD;} /* deprecated */
 }
 
 /* Header *****************/
@@ -171,7 +177,7 @@ a:focus {text-decoration:underline !important;}
 #banner nav a:link, #banner nav a:visited {display:inline-block; padding:5px 1.2em 8px;}
 
 /* Body *****************/
-#content {box-sizing:border-box; margin-bottom:2em; padding:0.3em;}
+#content {box-sizing:border-box; margin-bottom:2em;}
 
 /* Extras *****************/
 #extras {margin:0 auto 2.25em auto; overflow:hidden;}
@@ -180,32 +186,33 @@ a:focus {text-decoration:underline !important;}
 #extras li {display:inline-block; margin:0 2%; width:29%; min-width:130px;}
 #extras a {display:block; padding:.3em .25em; margin-bottom: .85em; text-align: center;}
 
-/* About *****************/
-#about {font-style:normal; text-align:left; margin-bottom:2em; padding:20px; overflow:hidden;}
-
-/*
-Footer
- *****************/
-#contentinfo {padding-bottom:2em; text-align:right;}
+/* Footer *****************/
+#contentinfo {margin-bottom:4em; text-align:right;}
+#about {font-style:normal; text-align:left; overflow:hidden;}
 
 /***** Sections *****/
 /* Blog */
-.hentry {display:block; clear:both; padding:0 0 1.5em;}
-li:last-child .hentry, #content > .hentry {border:0; margin:0;}
-#content > .hentry {padding:1em 0;}
+.h-entry {display:block; clear:both; padding:0 0.2em 1.5em; position:relative;}
+li:last-child .h-entry {border:0; margin:0;}
+#content > .h-entry {border:0; margin:0; padding:0.625em 0.3em;}
 .entry-title {font-size:2em;/*32px*/ margin-bottom:0.625em; margin-top:0;}
 
 /* Blog Index */
 #posts-list {list-style:none; margin:0;}
-#posts-list .hentry {padding-left:10px; position:relative;}
+
+/* Author */
+#author-card { margin-bottom: 0.3em; }
+#author-card h1 { margin-bottom:0; }
 
 /* Desktop mode: bring out the bubbles, and the width limitations */
 @media only screen and (min-width: 1000px) {
 	.body {margin:0 auto; width:77%; max-width:1200px; border-radius:5px;}
-	#banner nav, #banner h1 a {border-radius:5px;}
+	.body-info {border-radius:5px; padding:1.25em;}
+	#banner h1 a {border-radius:5px;}
 	#banner nav li:first-child a {border-top-left-radius:5px; border-bottom-left-radius:5px;}
 	#content, #about {border-radius:10px;}
 	#content {padding:2em 3em;}
+	#author-card { padding-bottom: 0; margin-bottom: 1.62em; }
 
 	div.note {max-width: 420px;}
 }

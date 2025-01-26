@@ -31,6 +31,55 @@
                 <ol id="posts-list" start="8">
         <li><article class="hentry h-entry">
             <header>
+                <h1 class="p-name"><a href="https://sapphirecat.github.io/2022/226-quilt-draw/" rel="bookmark"
+                       title="Permalink to Quilt Draw update released!">Quilt Draw update released!</a></h1>
+            </header>
+
+            <div class="entry-content">
+            <div class="p-summary"><p>A new <tt class="docutils literal"><span class="pre">quilt-draw</span></tt> release has been made!  This may also be the world’s
+first announcement of its existence, outside of appearing in a GitHub
+repository.</p>
+<p>To use it, go to its <a class="reference external" href="https://sapphirecat.github.io/quilt-draw/">repository page</a>.  <strong>Known issue:</strong> Dark Reader
+completely destroys the UI elements.  Please turn off Dark Reader for the
+site.</p>
+<div class="section" id="what-is-quilt-draw">
+<h2>What is quilt-draw?</h2>
+<p>Quilt Draw is a quarter-square triangle designing tool.  It lets you pick a
+set of colors, then modify a single quilt block using them. A preview of a
+full quilt using the block is generated in real time.  There are also options
+for adding borders and sashing to the preview.</p>
+<p>Finally, there are options to download both the block itself, and the quilt
+preview.</p>
+</div>
+<div class="section" id="what-is-new">
+<h2>What is new?</h2>
+<p>When the width of the window exceeded 1600 pixels, there were coordinate
+errors.  They are now fixed.  It’s a hack, but it works.</p>
+<p>I have also updated the components (the color picker) to the latest version.
+The main code still targets ES6/2015, so there should be few issues, even on
+older computers.</p>
+</div>
+<div class="section" id="technical-support">
+<h2>Technical Support</h2>
+<p>There is none.  This project is strictly for amusement.</p>
+</div>
+</div>
+<footer class="post-info">
+        <abbr class="published" title="2022-08-14T00:00:00-04:00">
+                Published: <time class="dt-published" datetime="2022-08-14 00:00:00">2022-08-14</time>
+        </abbr>
+
+        <address class="h-card author">
+                by                         <a class="u-url p-nickname" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
+        </address>
+in <a class="p-category" href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
+[<a class="u-url" href="https://sapphirecat.github.io/2022/226-quilt-draw/" rel="bookmark" title="Permalink to Quilt Draw update released!">permalink</a>]
+
+</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
+        </article></li>
+
+        <li><article class="hentry h-entry">
+            <header>
                 <h1 class="p-name"><a href="https://sapphirecat.github.io/2022/206-theme-update-light-mode/" rel="bookmark"
                        title="Permalink to Theme Updated (2022)">Theme Updated (2022)</a></h1>
             </header>
@@ -339,52 +388,6 @@ write about it here (and tag the git repository) until February 4th.</em></p>
         </address>
 in <a class="p-category" href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
 [<a class="u-url" href="https://sapphirecat.github.io/2016/035-cloud-maker-0-8-4-release/" rel="bookmark" title="Permalink to cloud-maker 0.8.4: minor bugfixes">permalink</a>]
-
-</footer><!-- /.post-info -->            </div><!-- /.entry-content -->
-        </article></li>
-
-        <li><article class="hentry h-entry">
-            <header>
-                <h1 class="p-name"><a href="https://sapphirecat.github.io/2015/356-cloud-maker-0-8-3-release/" rel="bookmark"
-                       title="Permalink to cloud-maker 0.8.3: new config variable, accurate requirements">cloud-maker 0.8.3: new config variable, accurate requirements</a></h1>
-            </header>
-
-            <div class="entry-content">
-            <div class="p-summary"><p>The 0.8.3 release adds an <tt class="docutils literal">INI_DIR</tt> variable that will be substituted
-into values in the configuration file, allowing for paths to be
-specified relative to the config file. It turned out that this was a
-feature I wanted, to keep the bundled data somewhat more local than
-requiring a fixed path under <tt class="docutils literal">HOME</tt>.</p>
-<p>While testing this change, I discovered that the Python 3 line prior to
-3.3.4 had a bug in the <tt class="docutils literal">tarfile</tt> module. When using the module exactly
-as I am (with an externally-provided file object and gzip compression),
-the tar data doesn’t get written into the gzip stream on disk.</p>
-<p>That was reported as <a class="reference external" href="http://bugs.python.org/issue20238">issue 20238</a>
-and fixed by the final releases of 3.3.4 and 3.4.0, while 2.7 has never
-been affected.</p>
-<p>Due to the widespread availability of 2.7 on systems that packaged
-affected versions of Python, I decided the pragmatic path would be to
-recommend Python 2 on those systems and raise the Python 3 version
-requirement to 3.3.4. I haven’t isolated the fix by diffing Python
-releases, nor do I know what I would need to patch over in order to work
-around it.</p>
-<p>This release is available as <a class="reference external" href="https://github.com/sapphirecat/cloud-maker/releases">source on
-github</a>, and as
-a wheel <a class="reference external" href="https://pypi.python.org/pypi/cloud-maker/0.8.3">on PyPI</a>.</p>
-<p>Any and all bugs should be reported to the <a class="reference external" href="https://github.com/sapphirecat/cloud-maker/issues">issue
-tracker</a> on
-github.</p>
-</div>
-<footer class="post-info">
-        <abbr class="published" title="2015-12-22T00:00:00-05:00">
-                Published: <time class="dt-published" datetime="2015-12-22 00:00:00">2015-12-22</time>
-        </abbr>
-
-        <address class="h-card author">
-                by                         <a class="u-url p-nickname" href="https://sapphirecat.github.io/author/sapphirecat.html">sapphirecat</a>
-        </address>
-in <a class="p-category" href="https://sapphirecat.github.io/category/projects.html">Projects</a>&nbsp;
-[<a class="u-url" href="https://sapphirecat.github.io/2015/356-cloud-maker-0-8-3-release/" rel="bookmark" title="Permalink to cloud-maker 0.8.3: new config variable, accurate requirements">permalink</a>]
 
 </footer><!-- /.post-info -->            </div><!-- /.entry-content -->
         </article></li>

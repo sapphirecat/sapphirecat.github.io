@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Meta</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/meta.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2022-07-25T00:00:00-04:00</updated><subtitle>the user pages</subtitle><entry><title>Theme Updated (2022)</title><link href="https://sapphirecat.github.io/2022/206-theme-update-light-mode/" rel="alternate"></link><published>2022-07-25T00:00:00-04:00</published><updated>2022-07-25T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-07-25:/2022/206-theme-update-light-mode/</id><content type="html">&lt;p&gt;I added a light theme for user-agents that support preferring light color
+<feed xmlns="http://www.w3.org/2005/Atom"><title>sapphirecat - Meta</title><link href="https://sapphirecat.github.io/" rel="alternate"></link><link href="https://sapphirecat.github.io/feeds/meta.atom.xml" rel="self"></link><id>https://sapphirecat.github.io/</id><updated>2025-01-26T00:00:00-05:00</updated><subtitle>the user pages</subtitle><entry><title>The Uncertain Future</title><link href="https://sapphirecat.github.io/2025/026-uncertain-future/" rel="alternate"></link><published>2025-01-26T00:00:00-05:00</published><updated>2025-01-26T00:00:00-05:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2025-01-26:/2025/026-uncertain-future/</id><content type="html">&lt;p&gt;I haven’t published a lot to GitHub in some time, mostly for reasons caused by
+me.  I blocked most outbound connections, including port 22, which broke my
+habit of using SSH to push commits.  (I did not, at the time, think of using a
+jump host.)  I used the &lt;tt class="docutils literal"&gt;gh&lt;/tt&gt; command (&lt;a class="reference external" href="https://cli.github.com/"&gt;GitHub CLI&lt;/a&gt;) until &lt;a class="reference external" href="https://github.com/cli/cli/issues/9569"&gt;the signing key
+expired&lt;/a&gt;.  In their how-did-this-happen? section, the CLI team shifted the
+blame, further “explaining” that both they &lt;em&gt;and&lt;/em&gt; their management were
+incompetent.  That team is no longer permitted to run code on my systems.&lt;/p&gt;
+&lt;p&gt;The other problem is so-called AI.  GitHub wants me to have Copilot, and my
+updated workflow makes use of Podman Desktop, which also wants me to have AI
+in a non-dismissable ad.  The inability to express non-consent on these
+platforms is a constant drain on me.&lt;/p&gt;
+&lt;p&gt;“Vote with your wallet,” they say.  “Leave a service if you don’t like it.”
+But that doesn’t work if the market leader takes a wrong turn, and &lt;em&gt;everyone
+follows.&lt;/em&gt;&lt;/p&gt;
+</content><category term="Meta"></category></entry><entry><title>Theme Updated (2022)</title><link href="https://sapphirecat.github.io/2022/206-theme-update-light-mode/" rel="alternate"></link><published>2022-07-25T00:00:00-04:00</published><updated>2022-07-25T00:00:00-04:00</updated><author><name>sapphirecat</name></author><id>tag:sapphirecat.github.io,2022-07-25:/2022/206-theme-update-light-mode/</id><content type="html">&lt;p&gt;I added a light theme for user-agents that support preferring light color
 schemes.  Dark is still the default, because it’s the correct way to have a
 color scheme, despite people shouting at me on the internet from 2002 until
 the advent of dark mode that “dark themes go against biological fact.”  How
